@@ -1,0 +1,35 @@
+<script>
+export default {
+  name: 'keyboard-svg',
+  props: {
+    size: {
+      type: Number,
+      default: 24
+    },
+    width: {
+      type: Number,
+      default: 0
+    },
+    height: {
+      type: Number,
+      default: 0
+    },
+    strokeWidth: {
+      type: Number,
+      default: 1.5
+    },
+    color: {
+      type: String,
+      default: "#3D3D3D"
+    }
+  }
+}
+</script>
+  
+<template>
+  <svg :style='{color: color}' :width="width || size" :height="height || size" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M6.07349 12H19.5735M6.07349 9H19.5735M6.07349 15H6.82349M9.82349 15H15.8235M18.8235 15H19.5735M3.86898 5.25H21.778C22.2173 5.25 22.5735 5.60616 22.5735 6.0455V17.9545C22.5735 18.3938 22.2173 18.75 21.778 18.75H3.86898C3.42964 18.75 3.07349 18.3938 3.07349 17.9545V6.0455C3.07349 5.60616 3.42964 5.25 3.86898 5.25Z" stroke="currentColor" :stroke-width="strokeWidth" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
+</template>
+    

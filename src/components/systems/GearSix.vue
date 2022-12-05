@@ -1,0 +1,36 @@
+<script>
+export default {
+  name: 'gear-six',
+  props: {
+    size: {
+      type: Number,
+      default: 24
+    },
+    width: {
+      type: Number,
+      default: 0
+    },
+    height: {
+      type: Number,
+      default: 0
+    },
+    strokeWidth: {
+      type: Number,
+      default: 1.5
+    },
+    color: {
+      type: String,
+      default: "#3D3D3D"
+    }
+  }
+}
+</script>
+  
+<template>
+  <svg :style='{color: color}' :width="width || size" :height="height || size" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M12.5884 16.1187C14.8821 16.1187 16.7415 14.2747 16.7415 12C16.7415 9.72528 14.8821 7.88126 12.5884 7.88126C10.2947 7.88126 8.43522 9.72528 8.43522 12C8.43522 14.2747 10.2947 16.1187 12.5884 16.1187Z" stroke="currentColor" :stroke-width="strokeWidth" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M18.5936 7.93691C18.7983 8.23501 18.9802 8.54795 19.1376 8.87307L21.3826 10.109C21.656 11.3545 21.657 12.6436 21.3854 13.8894L19.1391 15.126C18.9812 15.4509 18.7988 15.7636 18.5936 16.0614L18.6368 18.6074C17.6859 19.465 16.5607 20.1104 15.3369 20.5L13.1339 19.1891C12.7712 19.2159 12.407 19.2156 12.0444 19.1883L9.84262 20.4984C8.61828 20.1105 7.49206 19.4668 6.53991 18.6106L6.58315 16.0631C6.37843 15.765 6.19658 15.4521 6.03914 15.1269L3.79416 13.891C3.52072 12.6455 3.51978 11.3564 3.79141 10.1106L6.03763 8.87396C6.19559 8.54908 6.37793 8.23643 6.58313 7.93865L6.53992 5.3926C7.49082 4.53502 8.6161 3.88964 9.83987 3.5L12.0429 4.81087C12.4055 4.78409 12.7697 4.78438 13.1324 4.81172L15.3341 3.50158C16.5585 3.88947 17.6847 4.53323 18.6369 5.38944L18.5936 7.93691Z" stroke="currentColor" :stroke-width="strokeWidth" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
+</template>
+    

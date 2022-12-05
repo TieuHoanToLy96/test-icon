@@ -1,0 +1,35 @@
+<script>
+export default {
+  name: 'lock-simple',
+  props: {
+    size: {
+      type: Number,
+      default: 24
+    },
+    width: {
+      type: Number,
+      default: 0
+    },
+    height: {
+      type: Number,
+      default: 0
+    },
+    strokeWidth: {
+      type: Number,
+      default: 1.5
+    },
+    color: {
+      type: String,
+      default: "#3D3D3D"
+    }
+  }
+}
+</script>
+  
+<template>
+  <svg :style='{color: color}' :width="width || size" :height="height || size" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M8.79834 8.25V4.875C8.79834 3.97989 9.15392 3.12145 9.78685 2.48851C10.4198 1.85558 11.2782 1.5 12.1733 1.5C13.0684 1.5 13.9269 1.85558 14.5598 2.48851C15.1928 3.12145 15.5483 3.97989 15.5483 4.875V8.25M4.67334 8.25H19.6733C20.0876 8.25 20.4233 8.58579 20.4233 9V19.5C20.4233 19.9142 20.0876 20.25 19.6733 20.25H4.67334C4.25913 20.25 3.92334 19.9142 3.92334 19.5V9C3.92334 8.58579 4.25913 8.25 4.67334 8.25Z" stroke="currentColor" :stroke-width="strokeWidth" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
+</template>
+    

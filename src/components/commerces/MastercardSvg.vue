@@ -1,0 +1,42 @@
+<script>
+export default {
+  name: 'mastercard-svg',
+  props: {
+    size: {
+      type: Number,
+      default: 24
+    },
+    width: {
+      type: Number,
+      default: 0
+    },
+    height: {
+      type: Number,
+      default: 0
+    },
+    strokeWidth: {
+      type: Number,
+      default: 1.5
+    },
+    color: {
+      type: String,
+      default: "#3D3D3D"
+    }
+  }
+}
+</script>
+  
+<template>
+  <svg :style='{color: color}' :width="width || size" :height="height || size" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_79_882)">
+<path d="M12 9.765C11.5684 9.37859 11.0343 9.12539 10.4619 9.03596C9.88962 8.94654 9.30365 9.02472 8.77479 9.26106C8.24594 9.4974 7.79681 9.8818 7.48166 10.3678C7.16651 10.8539 6.99881 11.4207 6.99881 12C6.99881 12.5793 7.16651 13.1461 7.48166 13.6322C7.79681 14.1182 8.24594 14.5026 8.77479 14.7389C9.30365 14.9753 9.88962 15.0535 10.4619 14.964C11.0343 14.8746 11.5684 14.6214 12 14.235M17 12C17 13.6569 15.6569 15 14 15C12.3431 15 11 13.6569 11 12C11 10.3431 12.3431 9 14 9C15.6569 9 17 10.3431 17 12ZM5 5H19C20.1046 5 21 5.89543 21 7V17C21 18.1046 20.1046 19 19 19H5C3.89543 19 3 18.1046 3 17V7C3 5.89543 3.89543 5 5 5Z" stroke="currentColor" :stroke-width="strokeWidth" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<defs>
+<clipPath id="clip0_79_882">
+<rect :width="width || size" :height="height || size" fill="white"/>
+</clipPath>
+</defs>
+</svg>
+
+</template>
+    

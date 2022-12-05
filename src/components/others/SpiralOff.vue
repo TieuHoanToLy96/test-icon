@@ -1,0 +1,36 @@
+<script>
+export default {
+  name: 'spiral-off',
+  props: {
+    size: {
+      type: Number,
+      default: 24
+    },
+    width: {
+      type: Number,
+      default: 0
+    },
+    height: {
+      type: Number,
+      default: 0
+    },
+    strokeWidth: {
+      type: Number,
+      default: 1.5
+    },
+    color: {
+      type: String,
+      default: "#3D3D3D"
+    }
+  }
+}
+</script>
+  
+<template>
+  <svg :style='{color: color}' :width="width || size" :height="height || size" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M9.99986 12.0569C10.1373 12.3533 10.3487 12.6092 10.6139 12.7999C11.2959 13.2589 12.1229 13.1739 12.7779 12.7799M13.8809 9.85993C13.7512 9.41271 13.5283 8.99801 13.2269 8.64312C12.9254 8.28824 12.5522 8.00121 12.1319 7.80093C11.968 7.72325 11.7985 7.65807 11.6249 7.60593M8.23986 8.23993C7.65562 8.6624 7.19141 9.22966 6.89286 9.88593C5.79786 12.3179 7.18286 15.1339 9.60286 16.1319C11.5579 16.9379 13.6999 16.4819 15.2529 15.2479M16.9979 12.9799L17.0409 12.8769C18.4009 9.53393 16.4839 5.74293 13.1449 4.46693C11.5519 3.85693 9.87486 3.86793 8.35486 4.35393M5.77586 5.76193C4.76215 6.59099 3.98073 7.66872 3.50786 8.88993C1.87786 13.1429 4.33086 17.9139 8.58986 19.4659C11.8009 20.6359 15.2659 19.8079 17.7139 17.7279M19.5829 15.5789C20.4345 14.22 20.9225 12.6648 20.9999 11.0629" stroke="currentColor" :stroke-width="strokeWidth" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M3 3L21 21" stroke="currentColor" :stroke-width="strokeWidth" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
+</template>
+    

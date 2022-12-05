@@ -1,0 +1,36 @@
+<script>
+export default {
+  name: 'brand-revolut',
+  props: {
+    size: {
+      type: Number,
+      default: 24
+    },
+    width: {
+      type: Number,
+      default: 0
+    },
+    height: {
+      type: Number,
+      default: 0
+    },
+    strokeWidth: {
+      type: Number,
+      default: 1.5
+    },
+    color: {
+      type: String,
+      default: "#3D3D3D"
+    }
+  }
+}
+</script>
+  
+<template>
+  <svg :style='{color: color}' :width="width || size" :height="height || size" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M10.908 6C10.817 6.363 10 11 10 11H11.228C12.818 11 14 9.832 14 8.057C14 6.808 13.182 6 11.913 6H10.908V6Z" stroke="currentColor" :stroke-width="strokeWidth" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M15.5 13.4999L17.291 18.0579C17.826 19.4099 18.421 20.0659 19 20.4999C18 20.9999 16.384 21.0219 15.395 20.9969C14.422 20.9969 13.115 20.7569 12.289 18.3969L11 14.9999H9.5C9.5 14.9999 9.035 17.2429 8.85 18.2019C8.758 18.9059 8.909 19.7959 9 20.4999C8 20.9999 6.5 20.9999 5.5 20.9999C4.773 20.9999 4.05 20.7519 4 19.4999L4.004 19.1889C4.00588 18.7154 4.05581 18.2433 4.153 17.7799C4.903 14.2029 5.519 10.6099 6 6.9999C6.23 5.2779 6 3.4999 6 3.4999C6.585 3.3559 8.709 2.8979 12.787 3.0289C14.0345 3.0462 15.2683 3.29087 16.428 3.7509C16.736 3.8989 17.029 4.0769 17.303 4.2819C17.557 4.4939 17.8 4.7189 18.03 4.9559C18.33 5.3379 18.575 5.7599 18.757 6.2089C18.912 6.6919 18.994 7.1959 19 7.7019C19.001 10.1639 17.588 12.3779 15.5 13.4999V13.4999Z" stroke="currentColor" :stroke-width="strokeWidth" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
+</template>
+    

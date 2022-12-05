@@ -1,0 +1,42 @@
+<script>
+export default {
+  name: 'input-svg',
+  props: {
+    size: {
+      type: Number,
+      default: 24
+    },
+    width: {
+      type: Number,
+      default: 0
+    },
+    height: {
+      type: Number,
+      default: 0
+    },
+    strokeWidth: {
+      type: Number,
+      default: 1.5
+    },
+    color: {
+      type: String,
+      default: "#3D3D3D"
+    }
+  }
+}
+</script>
+  
+<template>
+  <svg :style='{color: color}' :width="width || size" :height="height || size" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_38_1067)">
+<path d="M4.5 14.25V20.25H19.5V14.25M8.25 16.5H15.75M9 8.8172L12.2443 11.9356L15.3627 8.69129M12.0996 3.74866L12.248 11.2472" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+</g>
+<defs>
+<clipPath id="clip0_38_1067">
+<rect :width="width || size" :height="height || size" fill="white"/>
+</clipPath>
+</defs>
+</svg>
+
+</template>
+    

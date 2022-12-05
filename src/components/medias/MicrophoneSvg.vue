@@ -1,0 +1,35 @@
+<script>
+export default {
+  name: 'microphone-svg',
+  props: {
+    size: {
+      type: Number,
+      default: 24
+    },
+    width: {
+      type: Number,
+      default: 0
+    },
+    height: {
+      type: Number,
+      default: 0
+    },
+    strokeWidth: {
+      type: Number,
+      default: 1.5
+    },
+    color: {
+      type: String,
+      default: "#3D3D3D"
+    }
+  }
+}
+</script>
+  
+<template>
+  <svg :style='{color: color}' :width="width || size" :height="height || size" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M12.3527 18.75V21.75M12.3527 18.75C14.0131 18.75 15.6153 18.1381 16.8529 17.0312C18.0906 15.9243 18.8769 14.4001 19.0615 12.75M12.3527 18.75C10.6923 18.75 9.09014 18.1381 7.8525 17.0312C6.61486 15.9243 5.82856 14.4001 5.64392 12.75M12.3527 2.25C13.3473 2.25 14.3011 2.64509 15.0044 3.34835C15.7076 4.05161 16.1027 5.00544 16.1027 6V12C16.1027 12.9946 15.7076 13.9484 15.0044 14.6517C14.3011 15.3549 13.3473 15.75 12.3527 15.75C11.8603 15.75 11.3726 15.653 10.9177 15.4645C10.4627 15.2761 10.0493 14.9999 9.70107 14.6517C9.35285 14.3034 9.07663 13.89 8.88817 13.4351C8.69972 12.9801 8.60272 12.4925 8.60272 12V5.99999C8.60272 5.00543 8.99781 4.05161 9.70107 3.34835C10.4043 2.64509 11.3582 2.25 12.3527 2.25Z" stroke="currentColor" :stroke-width="strokeWidth" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
+</template>
+    

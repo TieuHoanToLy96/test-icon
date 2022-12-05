@@ -1,0 +1,35 @@
+<script>
+export default {
+  name: 'file-plus',
+  props: {
+    size: {
+      type: Number,
+      default: 24
+    },
+    width: {
+      type: Number,
+      default: 0
+    },
+    height: {
+      type: Number,
+      default: 0
+    },
+    strokeWidth: {
+      type: Number,
+      default: 1.5
+    },
+    color: {
+      type: String,
+      default: "#3D3D3D"
+    }
+  }
+}
+</script>
+  
+<template>
+  <svg :style='{color: color}' :width="width || size" :height="height || size" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M14.3674 3H5.3667C5.16779 3 4.97702 3.07902 4.83637 3.21967C4.69572 3.36032 4.6167 3.55109 4.6167 3.75V20.25C4.6167 20.4489 4.69572 20.6397 4.83637 20.7803C4.97702 20.921 5.16779 21 5.3667 21H18.8674C18.9659 21 19.0634 20.9806 19.1544 20.9429C19.2454 20.9052 19.3281 20.85 19.3978 20.7803C19.4674 20.7107 19.5227 20.628 19.5603 20.537C19.598 20.446 19.6174 20.3485 19.6174 20.25V8.25M14.3674 3L19.6174 8.25M14.3674 3V8.25H19.6174M9.86743 14.25H14.3674M12.1174 12V16.5" stroke="currentColor" :stroke-width="strokeWidth" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
+</template>
+    

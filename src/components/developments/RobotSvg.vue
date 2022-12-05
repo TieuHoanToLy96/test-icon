@@ -1,0 +1,37 @@
+<script>
+export default {
+  name: 'robot-svg',
+  props: {
+    size: {
+      type: Number,
+      default: 24
+    },
+    width: {
+      type: Number,
+      default: 0
+    },
+    height: {
+      type: Number,
+      default: 0
+    },
+    strokeWidth: {
+      type: Number,
+      default: 1.5
+    },
+    color: {
+      type: String,
+      default: "#3D3D3D"
+    }
+  }
+}
+</script>
+  
+<template>
+  <svg :style='{color: color}' :width="width || size" :height="height || size" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M14.0515 13.5V17.25M10.3015 13.5V17.25M12.1765 5.25V1.5M5.42651 5.25H18.9265C20.1692 5.25 21.1765 6.25736 21.1765 7.5V18C21.1765 19.2426 20.1692 20.25 18.9265 20.25H5.42651C4.18387 20.25 3.17651 19.2426 3.17651 18V7.5C3.17651 6.25736 4.18387 5.25 5.42651 5.25ZM8.80151 13.5H15.5515C16.5871 13.5 17.4265 14.3395 17.4265 15.375C17.4265 16.4105 16.5871 17.25 15.5515 17.25H8.80151C7.76598 17.25 6.92651 16.4105 6.92651 15.375C6.92651 14.3395 7.76598 13.5 8.80151 13.5Z" stroke="currentColor" :stroke-width="strokeWidth" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M8.05065 11.0625C8.56794 11.0625 8.98729 10.6428 8.98729 10.125C8.98729 9.60723 8.56794 9.1875 8.05065 9.1875C7.53336 9.1875 7.11401 9.60723 7.11401 10.125C7.11401 10.6428 7.53336 11.0625 8.05065 11.0625Z" fill="currentColor"/>
+<path d="M16.3007 11.0625C16.8179 11.0625 17.2373 10.6428 17.2373 10.125C17.2373 9.60723 16.8179 9.1875 16.3007 9.1875C15.7834 9.1875 15.364 9.60723 15.364 10.125C15.364 10.6428 15.7834 11.0625 16.3007 11.0625Z" fill="currentColor"/>
+</svg>
+
+</template>
+    

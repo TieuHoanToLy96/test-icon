@@ -1,0 +1,39 @@
+<script>
+export default {
+  name: 'coffee-svg',
+  props: {
+    size: {
+      type: Number,
+      default: 24
+    },
+    width: {
+      type: Number,
+      default: 0
+    },
+    height: {
+      type: Number,
+      default: 0
+    },
+    strokeWidth: {
+      type: Number,
+      default: 1.5
+    },
+    color: {
+      type: String,
+      default: "#3D3D3D"
+    }
+  }
+}
+</script>
+  
+<template>
+  <svg :style='{color: color}' :width="width || size" :height="height || size" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M3 14.0001C3.83 14.6421 5.077 15.0171 6.5 15.0001C7.923 15.0171 9.17 14.6421 10 14.0001C10.83 13.3581 12.077 12.9831 13.5 13.0001C14.923 12.9831 16.17 13.3581 17 14.0001" stroke="currentColor" :stroke-width="strokeWidth" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M8.00004 3C7.68355 3.22717 7.42711 3.52797 7.25289 3.87642C7.07866 4.22488 6.99188 4.6105 7.00004 5C6.99188 5.3895 7.07866 5.77512 7.25289 6.12358C7.42711 6.47203 7.68355 6.77283 8.00004 7" stroke="currentColor" :stroke-width="strokeWidth" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M12 3C11.6835 3.22717 11.4271 3.52797 11.2529 3.87642C11.0787 4.22488 10.9919 4.6105 11 5C10.9919 5.3895 11.0787 5.77512 11.2529 6.12358C11.4271 6.47203 11.6835 6.77283 12 7" stroke="currentColor" :stroke-width="strokeWidth" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M3 10H17V15C17 16.5913 16.3679 18.1174 15.2426 19.2426C14.1174 20.3679 12.5913 21 11 21H9C7.4087 21 5.88258 20.3679 4.75736 19.2426C3.63214 18.1174 3 16.5913 3 15V10Z" stroke="currentColor" :stroke-width="strokeWidth" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M16.7461 16.7259C17.1927 16.931 17.6828 17.0231 18.1734 16.9944C18.6639 16.9656 19.1399 16.8167 19.5595 16.5609C19.9791 16.3051 20.3294 15.9501 20.5796 15.5272C20.8298 15.1043 20.9724 14.6264 20.9946 14.1355C21.0169 13.6446 20.9182 13.1557 20.7073 12.7119C20.4964 12.268 20.1797 11.8828 19.785 11.59C19.3903 11.2973 18.9298 11.1059 18.4438 11.0329C17.9579 10.9598 17.4614 11.0072 16.9981 11.1709" stroke="currentColor" :stroke-width="strokeWidth" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
+</template>
+    
