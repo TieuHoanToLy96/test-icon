@@ -26,7 +26,7 @@ import SmileyNervous from "./SmileyNervous.vue"
 import SmileySad from "./SmileySad.vue"
 import SmileySticker from "./SmileySticker.vue"
 import SmileyWink from "./SmileyWink.vue"
-import SmileyXeyes from "./SmileyXeyes.vue"
+import SmileyXEyes from "./SmileyXEyes.vue"
 import UserswitchSvg from "./UserswitchSvg.vue"
 import UserSvg from "./UserSvg.vue"
 import UserCircle from "./UserCircle.vue"
@@ -45,5 +45,5 @@ import UsersFour from "./UsersFour.vue"
 import UsersThree from "./UsersThree.vue"
 import WheelchairSvg from "./WheelchairSvg.vue"
 export {
-  BabySvg, GenderFemale, GenderIntersex, GenderMale, GenderNeuter, GenderNonbinary, GenderTransgender, HandSvg, HandFist, HandGrabbing, HandPalm, HandPointing, HandWaving, HandsClapping, HandshakeSvg, IdentificationBadge, IdentificationCard, PersonSvg, PersonSimple, PersonSimpleRun, PersonSimpleWalk, SmileySvg, SmileyBlank, SmileyMeh, SmileyNervous, SmileySad, SmileySticker, SmileyWink, SmileyXeyes, UserswitchSvg, UserSvg, UserCircle, UserCircleGear, UserCircleMinus, UserCirclePlus, UserFocus, UserGear, UserList, UserMinus, UserPlus, UserRectangle, UserSquare, UsersSvg, UsersFour, UsersThree, WheelchairSvg
+  BabySvg, GenderFemale, GenderIntersex, GenderMale, GenderNeuter, GenderNonbinary, GenderTransgender, HandSvg, HandFist, HandGrabbing, HandPalm, HandPointing, HandWaving, HandsClapping, HandshakeSvg, IdentificationBadge, IdentificationCard, PersonSvg, PersonSimple, PersonSimpleRun, PersonSimpleWalk, SmileySvg, SmileyBlank, SmileyMeh, SmileyNervous, SmileySad, SmileySticker, SmileyWink, SmileyXEyes, UserswitchSvg, UserSvg, UserCircle, UserCircleGear, UserCircleMinus, UserCirclePlus, UserFocus, UserGear, UserList, UserMinus, UserPlus, UserRectangle, UserSquare, UsersSvg, UsersFour, UsersThree, WheelchairSvg
 }

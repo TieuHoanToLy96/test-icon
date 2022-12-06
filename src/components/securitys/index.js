@@ -31,14 +31,14 @@ import WallSvg from "./WallSvg.vue"
 import WarningSvg from "./WarningSvg.vue"
 import WarningCircle from "./WarningCircle.vue"
 import WarningOctagon from "./WarningOctagon.vue"
-import InputSvg from "./InputSvg.vue"
-import OrderDelete from "./OrderDelete.vue"
-import OrderCancel from "./OrderCancel.vue"
-import OrderCheck from "./OrderCheck.vue"
-import OrderCustomer from "./OrderCustomer.vue"
-import OrderNew from "./OrderNew.vue"
-import OrderProduct from "./OrderProduct.vue"
-import OutputSvg from "./OutputSvg.vue"
+import inputSvg from "./inputSvg.vue"
+import order_Delete from "./order_Delete.vue"
+import order_cancel from "./order_cancel.vue"
+import order_check from "./order_check.vue"
+import order_customer from "./order_customer.vue"
+import order_new from "./order_new.vue"
+import order_product from "./order_product.vue"
+import outputSvg from "./outputSvg.vue"
 export {
-  CircleWavy, CircleWavyCheck, CircleWavyQuestion, CircleWavyWarning, Connect1Svg, Connect2Svg, DiscountSvg, FingerprintSvg, FingerprintSimple, InfoSvg, KeySvg, LockSvg, LockKey, LockKeyOpen, LockLaminated, LockLaminatedOpen, LockOpen, LockSimple, LockSimpleOpen, ProhibitSvg, ProhibitInset, QuestionSvg, ShieldSvg, ShieldCheck, ShieldCheckered, ShieldChevron, ShieldPlus, ShieldSlash, ShieldWarning, WallSvg, WarningSvg, WarningCircle, WarningOctagon, InputSvg, OrderDelete, OrderCancel, OrderCheck, OrderCustomer, OrderNew, OrderProduct, OutputSvg
+  CircleWavy, CircleWavyCheck, CircleWavyQuestion, CircleWavyWarning, Connect1Svg, Connect2Svg, DiscountSvg, FingerprintSvg, FingerprintSimple, InfoSvg, KeySvg, LockSvg, LockKey, LockKeyOpen, LockLaminated, LockLaminatedOpen, LockOpen, LockSimple, LockSimpleOpen, ProhibitSvg, ProhibitInset, QuestionSvg, ShieldSvg, ShieldCheck, ShieldCheckered, ShieldChevron, ShieldPlus, ShieldSlash, ShieldWarning, WallSvg, WarningSvg, WarningCircle, WarningOctagon, inputSvg, order_Delete, order_cancel, order_check, order_customer, order_new, order_product, outputSvg
 }

@@ -12,7 +12,7 @@
   "dependencies": {
     "fs": "^0.0.1-security",
     "vue": "^3.2.41",
-    "vue-pancake-icons": "^4.0.1"
+    "vue-pancake-icons": "^4.0.4"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^3.2.0",

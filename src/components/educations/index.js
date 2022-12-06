@@ -1,4 +1,4 @@
-import AlbumNone from "./AlbumNone.vue"
+import Album_None from "./Album_None.vue"
 import BookSvg from "./BookSvg.vue"
 import BookBookmark from "./BookBookmark.vue"
 import BookOpen from "./BookOpen.vue"
@@ -13,5 +13,5 @@ import ChalkboardTeacher from "./ChalkboardTeacher.vue"
 import GraduationCap from "./GraduationCap.vue"
 import StudentSvg from "./StudentSvg.vue"
 export {
-  AlbumNone, BookSvg, BookBookmark, BookOpen, BookmarkSvg, BookmarkSimple, BookmarksSvg, BookmarksSimple, BooksSvg, ChalkboardSvg, ChalkboardSimple, ChalkboardTeacher, GraduationCap, StudentSvg
+  Album_None, BookSvg, BookBookmark, BookOpen, BookmarkSvg, BookmarkSimple, BookmarksSvg, BookmarksSimple, BooksSvg, ChalkboardSvg, ChalkboardSimple, ChalkboardTeacher, GraduationCap, StudentSvg
 }
