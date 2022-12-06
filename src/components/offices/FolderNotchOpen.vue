@@ -1,0 +1,35 @@
+<script>
+export default {
+  name: 'folder-notch-open',
+  props: {
+    size: {
+      type: Number,
+      default: 24
+    },
+    width: {
+      type: Number,
+      default: 0
+    },
+    height: {
+      type: Number,
+      default: 0
+    },
+    strokeWidth: {
+      type: Number,
+      default: 1.5
+    },
+    color: {
+      type: String,
+      default: "#3D3D3D"
+    }
+  }
+}
+</script>
+  
+<template>
+  <svg :style='{color: color}' :width="width || size" :height="height || size" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M3.17676 19.5V6C3.17676 5.80109 3.25578 5.61032 3.39643 5.46967C3.53708 5.32902 3.72785 5.25 3.92676 5.25H8.92676C9.08904 5.25 9.24694 5.30263 9.37676 5.4L11.9768 7.35C12.1066 7.44737 12.2645 7.5 12.4268 7.5H18.9268C19.1257 7.5 19.3164 7.57902 19.4571 7.71967C19.5977 7.86032 19.6768 8.05109 19.6768 8.25V10.5M3.17676 19.5L5.98818 12.4715C6.04384 12.3323 6.13994 12.213 6.26406 12.1289C6.38818 12.0449 6.53464 12 6.68453 12H11.1997C11.3477 12 11.4925 11.9562 11.6157 11.874L13.4878 10.626C13.611 10.5438 13.7558 10.5 13.9038 10.5H21.6362C21.755 10.5 21.8722 10.5282 21.978 10.5824C22.0837 10.6365 22.1751 10.7151 22.2446 10.8115C22.3141 10.9079 22.3597 11.0194 22.3776 11.1369C22.3955 11.2544 22.3853 11.3744 22.3477 11.4872L19.6768 19.5H3.17676Z" stroke="currentColor" :stroke-width="strokeWidth" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
+</template>
+    

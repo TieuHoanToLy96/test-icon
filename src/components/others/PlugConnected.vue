@@ -1,0 +1,40 @@
+<script>
+export default {
+  name: 'plug-connected',
+  props: {
+    size: {
+      type: Number,
+      default: 24
+    },
+    width: {
+      type: Number,
+      default: 0
+    },
+    height: {
+      type: Number,
+      default: 0
+    },
+    strokeWidth: {
+      type: Number,
+      default: 1.5
+    },
+    color: {
+      type: String,
+      default: "#3D3D3D"
+    }
+  }
+}
+</script>
+  
+<template>
+  <svg :style='{color: color}' :width="width || size" :height="height || size" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M6.99994 12L11.9999 17L10.4999 18.5C10.1736 18.8371 9.78344 19.1059 9.35219 19.2907C8.92094 19.4755 8.45722 19.5727 7.98805 19.5765C7.51888 19.5803 7.05364 19.4907 6.61944 19.3129C6.18525 19.1351 5.79077 18.8727 5.45901 18.5409C5.12725 18.2092 4.86482 17.8147 4.68704 17.3805C4.50925 16.9463 4.41965 16.4811 4.42346 16.0119C4.42727 15.5427 4.52441 15.079 4.70922 14.6477C4.89404 14.2165 5.16283 13.8263 5.49994 13.5L6.99994 12Z" stroke="currentColor" :stroke-width="strokeWidth" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M17 11.9999L12 6.99994L13.5 5.49994C13.8263 5.16283 14.2165 4.89404 14.6477 4.70922C15.079 4.52441 15.5427 4.42727 16.0119 4.42346C16.4811 4.41965 16.9463 4.50925 17.3805 4.68704C17.8147 4.86482 18.2092 5.12725 18.5409 5.45901C18.8727 5.79077 19.1351 6.18525 19.3129 6.61944C19.4907 7.05364 19.5803 7.51888 19.5765 7.98805C19.5727 8.45722 19.4755 8.92094 19.2907 9.35219C19.1059 9.78344 18.8371 10.1736 18.5 10.4999L17 11.9999Z" stroke="currentColor" :stroke-width="strokeWidth" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M3 21L5.5 18.5" stroke="currentColor" :stroke-width="strokeWidth" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M18.5 5.5L21 3" stroke="currentColor" :stroke-width="strokeWidth" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M10 11L8 13" stroke="currentColor" :stroke-width="strokeWidth" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M13 14L11 16" stroke="currentColor" :stroke-width="strokeWidth" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
+</template>
+    

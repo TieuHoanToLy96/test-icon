@@ -1,0 +1,35 @@
+<script>
+export default {
+  name: 'navigation-arrow',
+  props: {
+    size: {
+      type: Number,
+      default: 24
+    },
+    width: {
+      type: Number,
+      default: 0
+    },
+    height: {
+      type: Number,
+      default: 0
+    },
+    strokeWidth: {
+      type: Number,
+      default: 1.5
+    },
+    color: {
+      type: String,
+      default: "#3D3D3D"
+    }
+  }
+}
+</script>
+  
+<template>
+  <svg :style='{color: color}' :width="width || size" :height="height || size" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M3.7406 4.45917L9.23482 20.3314C9.28656 20.4808 9.38422 20.6101 9.51385 20.7007C9.64349 20.7914 9.79845 20.8387 9.95659 20.8359C10.1147 20.8332 10.268 20.7805 10.3944 20.6854C10.5208 20.5904 10.6139 20.4578 10.6604 20.3066L12.8687 13.1295C12.9047 13.0126 12.9687 12.9062 13.0552 12.8197C13.1417 12.7332 13.2481 12.6692 13.365 12.6332L20.5421 10.4249C20.6933 10.3784 20.8259 10.2853 20.9209 10.1589C21.016 10.0325 21.0687 9.87923 21.0714 9.72109C21.0742 9.56295 21.0269 9.40799 20.9362 9.27835C20.8456 9.14872 20.7163 9.05106 20.5669 8.99932L4.69467 3.5051C4.56167 3.45906 4.41839 3.45137 4.28122 3.48292C4.14406 3.51447 4.01854 3.58398 3.91901 3.68351C3.81949 3.78303 3.74998 3.90855 3.71843 4.04572C3.68688 4.18289 3.69456 4.32617 3.7406 4.45917V4.45917Z" stroke="currentColor" :stroke-width="strokeWidth" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
+</template>
+    

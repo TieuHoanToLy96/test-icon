@@ -1,0 +1,51 @@
+<script>
+export default {
+  name: 'live-photo-off',
+  props: {
+    size: {
+      type: Number,
+      default: 24
+    },
+    width: {
+      type: Number,
+      default: 0
+    },
+    height: {
+      type: Number,
+      default: 0
+    },
+    strokeWidth: {
+      type: Number,
+      default: 1.5
+    },
+    color: {
+      type: String,
+      default: "#3D3D3D"
+    }
+  }
+}
+</script>
+  
+<template>
+  <svg :style='{color: color}' :width="width || size" :height="height || size" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M11.296 11.29C11.1084 11.4775 11.0029 11.7319 11.0028 11.9972C11.0028 12.1285 11.0286 12.2586 11.0788 12.38C11.129 12.5013 11.2027 12.6116 11.2955 12.7045C11.3884 12.7974 11.4986 12.8712 11.6199 12.9215C11.7413 12.9718 11.8713 12.9977 12.0027 12.9977C12.2679 12.9978 12.5224 12.8925 12.71 12.705" stroke="currentColor" :stroke-width="strokeWidth" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M8.473 8.45619C8.00574 8.92008 7.6347 9.47169 7.38119 10.0794C7.12768 10.687 6.99669 11.3388 6.99573 11.9972C6.99478 12.6556 7.12387 13.3078 7.37562 13.9162C7.62736 14.5246 7.99679 15.0773 8.46269 15.5425C8.9286 16.0078 9.48181 16.3764 10.0906 16.6273C10.6993 16.8782 11.3516 17.0063 12.0101 17.0045C12.6685 17.0026 13.3201 16.8707 13.9274 16.6163C14.5347 16.3619 15.0858 15.9901 15.549 15.5222M16.914 12.9312C17.0652 12.1339 17.0201 11.3118 16.7825 10.5358C16.545 9.75982 16.1221 9.05334 15.5504 8.47735C14.9788 7.90135 14.2755 7.47316 13.5013 7.22974C12.7272 6.98633 11.9054 6.935 11.107 7.08019" stroke="currentColor" :stroke-width="strokeWidth" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M15.9 20.1099V20.1199" stroke="currentColor" :stroke-width="strokeWidth" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M19.04 17.6099V17.6199" stroke="currentColor" :stroke-width="strokeWidth" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M20.77 14V14.01" stroke="currentColor" :stroke-width="strokeWidth" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M20.77 10V10.01" stroke="currentColor" :stroke-width="strokeWidth" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M19.04 6.39014V6.40014" stroke="currentColor" :stroke-width="strokeWidth" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M15.9 3.89014V3.90014" stroke="currentColor" :stroke-width="strokeWidth" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M12 3V3.01" stroke="currentColor" :stroke-width="strokeWidth" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M8.10001 3.89014V3.90014" stroke="currentColor" :stroke-width="strokeWidth" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M4.95999 6.39014V6.40014" stroke="currentColor" :stroke-width="strokeWidth" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M3.23001 10V10.01" stroke="currentColor" :stroke-width="strokeWidth" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M3.23001 14V14.01" stroke="currentColor" :stroke-width="strokeWidth" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M4.95999 17.6099V17.6199" stroke="currentColor" :stroke-width="strokeWidth" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M8.10001 20.1099V20.1199" stroke="currentColor" :stroke-width="strokeWidth" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M12 21V21.01" stroke="currentColor" :stroke-width="strokeWidth" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M3 3L21 21" stroke="currentColor" :stroke-width="strokeWidth" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
+</template>
+    

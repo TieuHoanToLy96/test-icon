@@ -1,0 +1,35 @@
+<script>
+export default {
+  name: 'note-pencil',
+  props: {
+    size: {
+      type: Number,
+      default: 24
+    },
+    width: {
+      type: Number,
+      default: 0
+    },
+    height: {
+      type: Number,
+      default: 0
+    },
+    strokeWidth: {
+      type: Number,
+      default: 1.5
+    },
+    color: {
+      type: String,
+      default: "#3D3D3D"
+    }
+  }
+}
+</script>
+  
+<template>
+  <svg :style='{color: color}' :width="width || size" :height="height || size" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M15.8088 5.25L18.8088 8.25M20.3088 11.25V19.5C20.3088 19.6989 20.2298 19.8897 20.0892 20.0303C19.9485 20.171 19.7578 20.25 19.5588 20.25H4.55884C4.35993 20.25 4.16916 20.171 4.02851 20.0303C3.88786 19.8897 3.80884 19.6989 3.80884 19.5V4.5C3.80884 4.30109 3.88786 4.11032 4.02851 3.96967C4.16916 3.82902 4.35993 3.75 4.55884 3.75H12.8088M12.0588 15H9.05884V12L18.0588 3L21.0588 6L12.0588 15Z" stroke="currentColor" :stroke-width="strokeWidth" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
+</template>
+    

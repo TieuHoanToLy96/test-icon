@@ -1,0 +1,35 @@
+<script>
+export default {
+  name: 'globe-svg',
+  props: {
+    size: {
+      type: Number,
+      default: 24
+    },
+    width: {
+      type: Number,
+      default: 0
+    },
+    height: {
+      type: Number,
+      default: 0
+    },
+    strokeWidth: {
+      type: Number,
+      default: 1.5
+    },
+    color: {
+      type: String,
+      default: "#3D3D3D"
+    }
+  }
+}
+</script>
+  
+<template>
+  <svg :style='{color: color}' :width="width || size" :height="height || size" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M3.92425 9H20.8991M3.92461 15H20.8994M21.4117 12C21.4117 16.9706 17.3823 21 12.4117 21C7.44118 21 3.41174 16.9706 3.41174 12C3.41174 7.02944 7.44118 3 12.4117 3C17.3823 3 21.4117 7.02944 21.4117 12ZM16.1617 12C16.1617 16.8371 14.4828 20.7584 12.4117 20.7584C10.3407 20.7584 8.66174 16.8371 8.66174 12C8.66174 7.16287 10.3407 3.2416 12.4117 3.2416C14.4828 3.2416 16.1617 7.16287 16.1617 12Z" stroke="currentColor" :stroke-width="strokeWidth" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
+</template>
+    

@@ -1,0 +1,39 @@
+<script>
+export default {
+  name: 'lemon-svg',
+  props: {
+    size: {
+      type: Number,
+      default: 24
+    },
+    width: {
+      type: Number,
+      default: 0
+    },
+    height: {
+      type: Number,
+      default: 0
+    },
+    strokeWidth: {
+      type: Number,
+      default: 1.5
+    },
+    color: {
+      type: String,
+      default: "#3D3D3D"
+    }
+  }
+}
+</script>
+  
+<template>
+  <svg :style='{color: color}' :width="width || size" :height="height || size" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M17.5359 3.39307C21.4409 7.29907 21.4409 13.6301 17.5359 17.5361C13.6299 21.4411 7.29894 21.4411 3.39294 17.5361L17.5359 3.39307" stroke="currentColor" :stroke-width="strokeWidth" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M5.86804 15.0602C7.08698 16.2792 8.74026 16.9641 10.4642 16.9642C12.1881 16.9643 13.8415 16.2796 15.0605 15.0607C16.2796 13.8417 16.9645 12.1884 16.9646 10.4645C16.9647 8.74059 16.28 7.08723 15.061 5.86816" stroke="currentColor" :stroke-width="strokeWidth" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M10.464 10.4639L15.061 15.0609" stroke="currentColor" :stroke-width="strokeWidth" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M10.464 10.4639V16.8279" stroke="currentColor" :stroke-width="strokeWidth" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M10.464 10.4639H16.828" stroke="currentColor" :stroke-width="strokeWidth" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
+</template>
+    

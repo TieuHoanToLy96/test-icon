@@ -1,0 +1,36 @@
+<script>
+export default {
+  name: 'spotify-logo',
+  props: {
+    size: {
+      type: Number,
+      default: 24
+    },
+    width: {
+      type: Number,
+      default: 0
+    },
+    height: {
+      type: Number,
+      default: 0
+    },
+    strokeWidth: {
+      type: Number,
+      default: 1.5
+    },
+    color: {
+      type: String,
+      default: "#3D3D3D"
+    }
+  }
+}
+</script>
+  
+<template>
+  <svg :style='{color: color}' :width="width || size" :height="height || size" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M12.4706 21C17.4411 21 21.4706 16.9706 21.4706 12C21.4706 7.02944 17.4411 3 12.4706 3C7.50002 3 3.47058 7.02944 3.47058 12C3.47058 16.9706 7.50002 21 12.4706 21Z" stroke="currentColor" :stroke-width="strokeWidth" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M17.2643 10.1559C15.7791 9.39541 14.1343 8.99921 12.4657 9C10.7971 9.00079 9.15269 9.39855 7.66821 10.1604M15.8733 12.817C14.8179 12.2792 13.6501 11.9992 12.4657 12C11.2812 12.0008 10.1138 12.2823 9.05917 12.8214M14.4836 15.4755C13.8572 15.1621 13.1662 14.9992 12.4657 15C11.7652 15.0008 11.0746 15.1651 10.4489 15.48" stroke="currentColor" :stroke-width="strokeWidth" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
+</template>
+    

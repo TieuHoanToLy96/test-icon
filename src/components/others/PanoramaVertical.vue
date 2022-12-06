@@ -1,0 +1,35 @@
+<script>
+export default {
+  name: 'panorama-vertical',
+  props: {
+    size: {
+      type: Number,
+      default: 24
+    },
+    width: {
+      type: Number,
+      default: 0
+    },
+    height: {
+      type: Number,
+      default: 0
+    },
+    strokeWidth: {
+      type: Number,
+      default: 1.5
+    },
+    color: {
+      type: String,
+      default: "#3D3D3D"
+    }
+  }
+}
+</script>
+  
+<template>
+  <svg :style='{color: color}' :width="width || size" :height="height || size" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M18.4629 4.338C16.5309 9.444 16.5309 14.549 18.4629 19.655C18.5184 19.8058 18.5367 19.9677 18.5162 20.127C18.4958 20.2864 18.4374 20.4384 18.3457 20.5704C18.2541 20.7023 18.132 20.8103 17.9899 20.8851C17.8477 20.9598 17.6896 20.9993 17.5289 21H6.52894C5.83694 21 5.32094 20.308 5.56694 19.66C7.49894 14.553 7.49894 9.446 5.56694 4.339C5.32094 3.691 5.80994 3 6.50194 3H17.5299C18.2229 3 18.7099 3.691 18.4649 4.338H18.4629Z" stroke="currentColor" :stroke-width="strokeWidth" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
+</template>
+    

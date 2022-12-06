@@ -1,0 +1,35 @@
+<script>
+export default {
+  name: 'presentation-chart',
+  props: {
+    size: {
+      type: Number,
+      default: 24
+    },
+    width: {
+      type: Number,
+      default: 0
+    },
+    height: {
+      type: Number,
+      default: 0
+    },
+    strokeWidth: {
+      type: Number,
+      default: 1.5
+    },
+    color: {
+      type: String,
+      default: "#3D3D3D"
+    }
+  }
+}
+</script>
+  
+<template>
+  <svg :style='{color: color}' :width="width || size" :height="height || size" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M15.9409 17.25L18.9409 21M9.94092 17.25L6.94092 21M9.94092 11.25V13.5M12.9409 9.75V13.5M15.9409 8.25V13.5M12.9409 4.5V2.25M4.69092 4.5H21.1909C21.6051 4.5 21.9409 4.83579 21.9409 5.25V16.5C21.9409 16.9142 21.6051 17.25 21.1909 17.25H4.69092C4.2767 17.25 3.94092 16.9142 3.94092 16.5V5.25C3.94092 4.83579 4.2767 4.5 4.69092 4.5Z" stroke="currentColor" :stroke-width="strokeWidth" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
+</template>
+    

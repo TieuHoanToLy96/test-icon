@@ -1,0 +1,35 @@
+<script>
+export default {
+  name: 'omega-svg',
+  props: {
+    size: {
+      type: Number,
+      default: 24
+    },
+    width: {
+      type: Number,
+      default: 0
+    },
+    height: {
+      type: Number,
+      default: 0
+    },
+    strokeWidth: {
+      type: Number,
+      default: 1.5
+    },
+    color: {
+      type: String,
+      default: "#3D3D3D"
+    }
+  }
+}
+</script>
+  
+<template>
+  <svg :style='{color: color}' :width="width || size" :height="height || size" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M4 18.9998H9V17.9998C7.46361 17.3129 6.20949 16.1195 5.4472 14.6191C4.68491 13.1187 4.46062 11.4021 4.81181 9.75618C5.163 8.11026 6.0684 6.63472 7.37673 5.57611C8.68505 4.5175 10.317 3.93994 12 3.93994C13.683 3.93994 15.315 4.5175 16.6233 5.57611C17.9316 6.63472 18.837 8.11026 19.1882 9.75618C19.5394 11.4021 19.3151 13.1187 18.5528 14.6191C17.7905 16.1195 16.5364 17.3129 15 17.9998V18.9998H20" stroke="currentColor" :stroke-width="strokeWidth" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
+</template>
+    

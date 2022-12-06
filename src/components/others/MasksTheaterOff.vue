@@ -1,0 +1,41 @@
+<script>
+export default {
+  name: 'masks-theater-off',
+  props: {
+    size: {
+      type: Number,
+      default: 24
+    },
+    width: {
+      type: Number,
+      default: 0
+    },
+    height: {
+      type: Number,
+      default: 0
+    },
+    strokeWidth: {
+      type: Number,
+      default: 1.5
+    },
+    color: {
+      type: String,
+      default: "#3D3D3D"
+    }
+  }
+}
+</script>
+  
+<template>
+  <svg :style='{color: color}' :width="width || size" :height="height || size" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M13.0002 8.99978C13.0582 8.99478 13.1332 8.99978 13.1922 8.99978H19.8082C20.0863 8.99973 20.3614 9.05767 20.6158 9.16992C20.8703 9.28217 21.0985 9.44624 21.286 9.65168C21.4734 9.85711 21.616 10.0994 21.7045 10.363C21.7931 10.6266 21.8256 10.9058 21.8002 11.1828L21.2462 17.2238M19.9602 19.9418C19.2222 20.6229 18.2545 21.0007 17.2502 20.9998H15.7502C14.7526 20.9997 13.791 20.6268 13.0541 19.9543C12.3172 19.2818 11.8582 18.3582 11.7672 17.3648L11.2002 11.1828" stroke="currentColor" :stroke-width="strokeWidth" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M18 13H18.01" stroke="currentColor" :stroke-width="strokeWidth" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M15 16.5C15.657 16.938 16.313 17.088 16.97 16.951" stroke="currentColor" :stroke-width="strokeWidth" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M8.63181 15.982C8.50483 15.994 8.37736 16 8.24981 16H6.74981C5.75219 15.9999 4.7906 15.6271 4.05371 14.9546C3.31683 14.2821 2.85784 13.3585 2.76681 12.365L2.19981 6.183C2.17435 5.9061 2.2069 5.62692 2.29541 5.36331C2.38391 5.0997 2.52641 4.85744 2.71381 4.652C3.0459 4.28155 3.50471 4.04894 3.99981 4M7.99981 4H10.8078C11.3382 4 11.847 4.21071 12.222 4.58579C12.5971 4.96086 12.8078 5.46957 12.8078 6" stroke="currentColor" :stroke-width="strokeWidth" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M6 8H6.01" stroke="currentColor" :stroke-width="strokeWidth" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M6 12.0002C6.764 11.4902 7.528 11.3702 8.291 11.6402" stroke="currentColor" :stroke-width="strokeWidth" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M3 3L21 21" stroke="currentColor" :stroke-width="strokeWidth" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
+</template>
+    

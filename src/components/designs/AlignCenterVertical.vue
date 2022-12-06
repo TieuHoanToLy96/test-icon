@@ -1,0 +1,35 @@
+<script>
+export default {
+  name: 'align-center-vertical',
+  props: {
+    size: {
+      type: Number,
+      default: 24
+    },
+    width: {
+      type: Number,
+      default: 0
+    },
+    height: {
+      type: Number,
+      default: 0
+    },
+    strokeWidth: {
+      type: Number,
+      default: 1.5
+    },
+    color: {
+      type: String,
+      default: "#3D3D3D"
+    }
+  }
+}
+</script>
+  
+<template>
+  <svg :style='{color: color}' :width="width || size" :height="height || size" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M21.9417 12H19.6917M6.19165 12H3.94165M14.4417 12H11.4417M19.6912 6.75V17.25C19.6912 17.6642 19.3554 18 18.9412 18H15.1912C14.777 18 14.4412 17.6642 14.4412 17.25V6.75C14.4412 6.33579 14.777 6 15.1912 6H18.9412C19.3554 6 19.6912 6.33579 19.6912 6.75ZM6.94119 3.75H10.6912C11.1054 3.75 11.4412 4.08579 11.4412 4.5V19.5C11.4412 19.9142 11.1054 20.25 10.6912 20.25H6.94119C6.52698 20.25 6.19119 19.9142 6.19119 19.5V4.5C6.19119 4.08579 6.52698 3.75 6.94119 3.75Z" stroke="currentColor" :stroke-width="strokeWidth" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
+</template>
+    

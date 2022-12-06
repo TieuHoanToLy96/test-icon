@@ -1,0 +1,38 @@
+<script>
+export default {
+  name: 'ballon-off',
+  props: {
+    size: {
+      type: Number,
+      default: 24
+    },
+    width: {
+      type: Number,
+      default: 0
+    },
+    height: {
+      type: Number,
+      default: 0
+    },
+    strokeWidth: {
+      type: Number,
+      default: 1.5
+    },
+    color: {
+      type: String,
+      default: "#3D3D3D"
+    }
+  }
+}
+</script>
+  
+<template>
+  <svg :style='{color: color}' :width="width || size" :height="height || size" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M14 8C14 7.46957 13.7893 6.96086 13.4142 6.58579C13.0391 6.21071 12.5304 6 12 6" stroke="currentColor" :stroke-width="strokeWidth" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M7.762 3.75297C8.60162 2.91518 9.67071 2.34505 10.8342 2.11459C11.9977 1.88413 13.2034 2.0037 14.299 2.45817C15.3946 2.91265 16.3309 3.68165 16.9896 4.66802C17.6483 5.65438 17.9999 6.81386 18 7.99997C18 9.84697 17.63 11.564 16.993 12.993M15.403 15.413C14.436 16.414 13.263 17 12 17C8.686 17 6 12.97 6 7.99997C6 7.40697 6.086 6.83397 6.246 6.29297" stroke="currentColor" :stroke-width="strokeWidth" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M12 17V18C12 18.5304 11.7893 19.0391 11.4142 19.4142C11.0391 19.7893 10.5304 20 10 20H7C6.46957 20 5.96086 20.2107 5.58579 20.5858C5.21071 20.9609 5 21.4696 5 22" stroke="currentColor" :stroke-width="strokeWidth" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M3 3L21 21" stroke="currentColor" :stroke-width="strokeWidth" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
+</template>
+    

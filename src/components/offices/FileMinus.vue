@@ -1,0 +1,35 @@
+<script>
+export default {
+  name: 'file-minus',
+  props: {
+    size: {
+      type: Number,
+      default: 24
+    },
+    width: {
+      type: Number,
+      default: 0
+    },
+    height: {
+      type: Number,
+      default: 0
+    },
+    strokeWidth: {
+      type: Number,
+      default: 1.5
+    },
+    color: {
+      type: String,
+      default: "#3D3D3D"
+    }
+  }
+}
+</script>
+  
+<template>
+  <svg :style='{color: color}' :width="width || size" :height="height || size" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M14.4268 3H5.42603C5.22711 3 5.03635 3.07902 4.8957 3.21967C4.75504 3.36032 4.67603 3.55109 4.67603 3.75V20.25C4.67603 20.4489 4.75504 20.6397 4.8957 20.7803C5.03635 20.921 5.22711 21 5.42603 21H18.9268C19.0252 21 19.1228 20.9806 19.2138 20.9429C19.3048 20.9052 19.3874 20.85 19.4571 20.7803C19.5267 20.7107 19.582 20.628 19.6197 20.537C19.6574 20.446 19.6768 20.3485 19.6768 20.25V8.25M14.4268 3L19.6768 8.25M14.4268 3V8.25H19.6768M9.92676 14.25H14.4268" stroke="currentColor" :stroke-width="strokeWidth" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
+</template>
+    
