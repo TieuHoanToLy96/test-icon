@@ -36,7 +36,7 @@ export default {
   },
   computed: {
     totalIcon() {
-      return this.array.reduce((acc, el) => el.data.length + acc, 0)
+      return this.array.reduce((acc, el) => (el.data || []).filter(el => !el.isHidden).length + acc, 0)
     }
   },
   components: {
@@ -169,7 +169,7 @@ export default {
               {{ el.title }}
             </span>
             <span>
-              {{ el.data.length }}
+              {{ (el.data || []).filter(el => !el.isHidden).length }}
             </span>
           </span>
         </a-menu-item>
@@ -187,7 +187,8 @@ export default {
               <div :style="{ display: 'flex', flexWrap: 'wrap', }" v-show="key == 'all' || key == el.key">
                 <Lazy v-for="(component, idx) in el.data" :key="`module_${component.name}_${idx}`" class="icon-wrapper"
                   @click="e => click(idx, component.name)" v-show="!component.isHidden">
-                  <component :ref="`module_${component.name}_${idx}`" :is="component" :color="colorSvg" :size="parseInt(iconSize)">
+                  <component :ref="`module_${component.name}_${idx}`" :is="component" :color="colorSvg"
+                    :size="parseInt(iconSize)">
                   </component>
                   <div></div>
                 </Lazy>
