@@ -42,8 +42,10 @@ const convertVueComponent = (dirName = "arrows") => {
       fileKebab = fileKebab + "-svg"
     }
 
-    file = toPascalCase(fileKebab)
-
+    if (dirName == "others") {
+      file = toPascalCase(fileKebab)
+    }
+    
     content = content.replaceAll('width="24"', ':width="width || size"').replaceAll('width="25"', ':width="width || size"').replaceAll('height="24"', ':height="height || size"').replaceAll('stroke-width="1.5"', ':stroke-width="strokeWidth"').replaceAll('stroke="#3D3D3D"', 'stroke="currentColor"').replaceAll('stroke="black"', 'stroke="currentColor"').replaceAll('fill="#3D3D3D"', 'fill="currentColor"').replaceAll('fill="black"', 'fill="currentColor"').replaceAll("<svg", "<svg :style='{color: color}'")
     let newContent = `<script>
 export default {
@@ -67,7 +69,7 @@ export default {
     },
     color: {
       type: String,
-      default: "#3D3D3D"
+      default: "currentColor"
     }
   }
 }

@@ -20,7 +20,7 @@ export default {
     },
     color: {
       type: String,
-      default: "#3D3D3D"
+      default: "currentColor"
     }
   }
 }
