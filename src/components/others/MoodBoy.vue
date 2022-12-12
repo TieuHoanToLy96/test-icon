@@ -1,0 +1,40 @@
+<script>
+export default {
+  name: 'mood-boy',
+  props: {
+    size: {
+      type: Number,
+      default: 24
+    },
+    width: {
+      type: Number,
+      default: 0
+    },
+    height: {
+      type: Number,
+      default: 0
+    },
+    strokeWidth: {
+      type: Number,
+      default: 1.7
+    },
+    color: {
+      type: String,
+      default: "currentColor"
+    }
+  }
+}
+</script>
+  
+<template>
+  <svg :style='{color: color}' :width="width || size" :height="height || size" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M17.0001 4.5C18.0071 5.17149 18.8683 6.03921 19.5323 7.05125C20.1962 8.06329 20.6491 9.19885 20.8641 10.39C21.2383 10.632 21.541 10.9696 21.7409 11.3679C21.9408 11.7661 22.0306 12.2106 22.0011 12.6553C21.9715 13.0999 21.8236 13.5286 21.5727 13.8969C21.3218 14.2652 20.977 14.5597 20.5741 14.75C19.9911 16.5642 18.8473 18.1466 17.3074 19.2692C15.7676 20.3918 13.9112 20.9967 12.0056 20.9967C10.0999 20.9967 8.24351 20.3918 6.70366 19.2692C5.16381 18.1466 4.02003 16.5642 3.43705 14.75C3.03408 14.5597 2.6893 14.2652 2.4384 13.8969C2.1875 13.5286 2.0396 13.0999 2.01003 12.6553C1.98045 12.2106 2.07027 11.7661 2.27018 11.3679C2.47009 10.9696 2.77283 10.632 3.14705 10.39C3.35769 9.22247 3.79709 8.1081 4.43997 7.11099C5.08286 6.11389 5.91653 5.25374 6.89305 4.58" stroke="currentColor" :stroke-width="strokeWidth" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M9.5 16C9.82588 16.3326 10.2148 16.5968 10.6441 16.7772C11.0734 16.9576 11.5344 17.0505 12 17.0505C12.4656 17.0505 12.9266 16.9576 13.3559 16.7772C13.7852 16.5968 14.1741 16.3326 14.5 16" stroke="currentColor" :stroke-width="strokeWidth" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M8.5 2C10 3 11 5.5 11 7" stroke="currentColor" :stroke-width="strokeWidth" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M12.5 2C14 4 14.5 5.5 14.5 7" stroke="currentColor" :stroke-width="strokeWidth" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M9 12H9.01" stroke="currentColor" :stroke-width="strokeWidth" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M15 12H15.01" stroke="currentColor" :stroke-width="strokeWidth" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
+</template>
+    

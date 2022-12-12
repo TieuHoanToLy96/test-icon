@@ -1,0 +1,37 @@
+<script>
+export default {
+  name: 'home-edit',
+  props: {
+    size: {
+      type: Number,
+      default: 24
+    },
+    width: {
+      type: Number,
+      default: 0
+    },
+    height: {
+      type: Number,
+      default: 0
+    },
+    strokeWidth: {
+      type: Number,
+      default: 1.7
+    },
+    color: {
+      type: String,
+      default: "currentColor"
+    }
+  }
+}
+</script>
+  
+<template>
+  <svg :style='{color: color}' :width="width || size" :height="height || size" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M9 21V15C9 14.4696 9.21071 13.9609 9.58579 13.5858C9.96086 13.2107 10.4696 13 11 13H13C13.645 13 14.218 13.305 14.584 13.78" stroke="currentColor" :stroke-width="strokeWidth" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M20.004 11.004L12 3L3 12H5V19C5 19.5304 5.21071 20.0391 5.58579 20.4142C5.96086 20.7893 6.46957 21 7 21H11" stroke="currentColor" :stroke-width="strokeWidth" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M18.42 15.6102C18.615 15.4152 18.8465 15.2605 19.1013 15.155C19.3561 15.0494 19.6292 14.9951 19.905 14.9951C20.1808 14.9951 20.4539 15.0494 20.7087 15.155C20.9635 15.2605 21.195 15.4152 21.39 15.6102C21.585 15.8052 21.7397 16.0368 21.8452 16.2915C21.9508 16.5463 22.0051 16.8194 22.0051 17.0952C22.0051 17.371 21.9508 17.6441 21.8452 17.8989C21.7397 18.1537 21.585 18.3852 21.39 18.5802L18 22.0002H15V19.0002L18.42 15.6102Z" stroke="currentColor" :stroke-width="strokeWidth" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
+</template>
+    

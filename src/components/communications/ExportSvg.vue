@@ -1,0 +1,35 @@
+<script>
+export default {
+  name: 'export-svg',
+  props: {
+    size: {
+      type: Number,
+      default: 24
+    },
+    width: {
+      type: Number,
+      default: 0
+    },
+    height: {
+      type: Number,
+      default: 0
+    },
+    strokeWidth: {
+      type: Number,
+      default: 1.7
+    },
+    color: {
+      type: String,
+      default: "currentColor"
+    }
+  }
+}
+</script>
+  
+<template>
+  <svg :style='{color: color}' :width="width || size" :height="height || size" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M8.12122 5.43647L12.0587 1.5L15.9962 5.43647M12.0587 12V1.50276M16.5587 9H18.8087C19.0076 9 19.1984 9.07902 19.339 9.21967C19.4797 9.36032 19.5587 9.55109 19.5587 9.75V19.5C19.5587 19.6989 19.4797 19.8897 19.339 20.0303C19.1984 20.171 19.0076 20.25 18.8087 20.25H5.30872C5.1098 20.25 4.91904 20.171 4.77839 20.0303C4.63773 19.8897 4.55872 19.6989 4.55872 19.5V9.75C4.55872 9.55109 4.63773 9.36032 4.77839 9.21967C4.91904 9.07902 5.1098 9 5.30872 9H7.55872" stroke="currentColor" :stroke-width="strokeWidth" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
+</template>
+    

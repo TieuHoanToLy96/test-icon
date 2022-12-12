@@ -1,0 +1,35 @@
+<script>
+export default {
+  name: 'cloud-svg',
+  props: {
+    size: {
+      type: Number,
+      default: 24
+    },
+    width: {
+      type: Number,
+      default: 0
+    },
+    height: {
+      type: Number,
+      default: 0
+    },
+    strokeWidth: {
+      type: Number,
+      default: 1.7
+    },
+    color: {
+      type: String,
+      default: "currentColor"
+    }
+  }
+}
+</script>
+  
+<template>
+  <svg :style='{color: color}' :width="width || size" :height="height || size" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M6.657 18C4.085 18 2 15.993 2 13.517C2 11.042 4.085 9.035 6.657 9.035C7.05 7.273 8.451 5.835 10.332 5.262C12.212 4.69 14.288 5.069 15.776 6.258C17.264 7.448 17.938 9.265 17.546 11.027H18.536C20.449 11.027 22 12.587 22 14.513C22 16.44 20.449 18 18.535 18H6.657" stroke="currentColor" :stroke-width="strokeWidth" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
+</template>
+    

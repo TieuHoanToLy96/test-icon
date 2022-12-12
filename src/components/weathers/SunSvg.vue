@@ -1,0 +1,35 @@
+<script>
+export default {
+  name: 'sun-svg',
+  props: {
+    size: {
+      type: Number,
+      default: 24
+    },
+    width: {
+      type: Number,
+      default: 0
+    },
+    height: {
+      type: Number,
+      default: 0
+    },
+    strokeWidth: {
+      type: Number,
+      default: 1.7
+    },
+    color: {
+      type: String,
+      default: "currentColor"
+    }
+  }
+}
+</script>
+  
+<template>
+  <svg :style='{color: color}' :width="width || size" :height="height || size" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M12.7649 3.375V1.5M6.6661 5.9012L5.34027 4.57538M4.13989 12H2.26489M6.6661 18.0988L5.34027 19.4246M12.7649 20.625V22.5M18.8637 18.0988L20.1895 19.4246M21.3899 12H23.2649M18.8637 5.9012L20.1895 4.57538M18.3899 12C18.3899 15.1066 15.8715 17.625 12.7649 17.625C9.65829 17.625 7.13989 15.1066 7.13989 12C7.13989 8.8934 9.65829 6.375 12.7649 6.375C15.8715 6.375 18.3899 8.8934 18.3899 12Z" stroke="currentColor" :stroke-width="strokeWidth" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
+</template>
+    

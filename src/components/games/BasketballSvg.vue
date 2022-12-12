@@ -1,0 +1,35 @@
+<script>
+export default {
+  name: 'basketball-svg',
+  props: {
+    size: {
+      type: Number,
+      default: 24
+    },
+    width: {
+      type: Number,
+      default: 0
+    },
+    height: {
+      type: Number,
+      default: 0
+    },
+    strokeWidth: {
+      type: Number,
+      default: 1.7
+    },
+    color: {
+      type: String,
+      default: "currentColor"
+    }
+  }
+}
+</script>
+  
+<template>
+  <svg :style='{color: color}' :width="width || size" :height="height || size" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M21.0588 12C21.0588 16.9706 17.0293 21 12.0588 21M21.0588 12C21.0588 7.02944 17.0293 3 12.0588 3M21.0588 12H3.05878M12.0588 21C7.08821 21 3.05878 16.9706 3.05878 12M12.0588 21V3M3.05878 12C3.05878 7.02944 7.08821 3 12.0588 3M5.68378 5.6471C6.51745 6.48149 7.17841 7.47208 7.62883 8.56218C8.07926 9.65228 8.31032 10.8205 8.30878 12C8.31032 13.1795 8.07927 14.3477 7.62885 15.4378C7.17844 16.5279 6.5175 17.5184 5.68385 18.3528M18.4338 5.6471C16.7527 7.33401 15.8088 9.61844 15.8088 12C15.8088 14.3815 16.7527 16.6659 18.4337 18.3528" stroke="currentColor" :stroke-width="strokeWidth" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
+</template>
+    

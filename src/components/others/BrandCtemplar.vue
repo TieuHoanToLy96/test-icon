@@ -1,0 +1,38 @@
+<script>
+export default {
+  name: 'brand-ctemplar',
+  props: {
+    size: {
+      type: Number,
+      default: 24
+    },
+    width: {
+      type: Number,
+      default: 0
+    },
+    height: {
+      type: Number,
+      default: 0
+    },
+    strokeWidth: {
+      type: Number,
+      default: 1.7
+    },
+    color: {
+      type: String,
+      default: "currentColor"
+    }
+  }
+}
+</script>
+  
+<template>
+  <svg :style='{color: color}' :width="width || size" :height="height || size" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M6.04004 14.831L10.5 10.5" stroke="currentColor" :stroke-width="strokeWidth" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M12.5548 20.82C17.1048 17.364 20.1368 12.181 20.9808 6.41501C21.0369 6.05912 20.9762 5.69465 20.8078 5.37613C20.6394 5.05761 20.3725 4.80217 20.0468 4.64801C17.5106 3.53784 14.7683 2.97623 11.9998 3.00001C9.23142 2.97592 6.48916 3.53718 3.95283 4.64701C3.6272 4.80117 3.36023 5.05661 3.19187 5.37513C3.02351 5.69365 2.9628 6.05812 3.01883 6.41401C3.86283 12.18 6.89383 17.364 11.4448 20.82C11.6064 20.9367 11.8006 20.9995 11.9998 20.9995C12.1991 20.9995 12.3933 20.9367 12.5548 20.82Z" stroke="currentColor" :stroke-width="strokeWidth" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M20 5C18 5 15.63 8.304 12 11.644C8.37 8.304 6 5 4 5" stroke="currentColor" :stroke-width="strokeWidth" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M17.738 15L13.5 10.5" stroke="currentColor" :stroke-width="strokeWidth" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
+</template>
+    

@@ -1,0 +1,35 @@
+<script>
+export default {
+  name: 'first-aid-kit',
+  props: {
+    size: {
+      type: Number,
+      default: 24
+    },
+    width: {
+      type: Number,
+      default: 0
+    },
+    height: {
+      type: Number,
+      default: 0
+    },
+    strokeWidth: {
+      type: Number,
+      default: 1.7
+    },
+    color: {
+      type: String,
+      default: "currentColor"
+    }
+  }
+}
+</script>
+  
+<template>
+  <svg :style='{color: color}' :width="width || size" :height="height || size" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M12.6472 10.875V16.125M15.2722 13.5H10.0222M16.3972 6.75V5.25C16.3972 4.85218 16.2392 4.47064 15.9579 4.18934C15.6766 3.90804 15.295 3.75 14.8972 3.75H10.3972C9.99939 3.75 9.61786 3.90804 9.33656 4.18934C9.05525 4.47064 8.89722 4.85218 8.89722 5.25V6.75M4.39795 6.75H20.898C21.3122 6.75 21.648 7.08579 21.648 7.5V19.5C21.648 19.9142 21.3122 20.25 20.898 20.25H4.39795C3.98374 20.25 3.64795 19.9142 3.64795 19.5V7.5C3.64795 7.08579 3.98374 6.75 4.39795 6.75Z" stroke="currentColor" :stroke-width="strokeWidth" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
+</template>
+    

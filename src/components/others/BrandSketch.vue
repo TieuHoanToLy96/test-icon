@@ -1,0 +1,35 @@
+<script>
+export default {
+  name: 'brand-sketch',
+  props: {
+    size: {
+      type: Number,
+      default: 24
+    },
+    width: {
+      type: Number,
+      default: 0
+    },
+    height: {
+      type: Number,
+      default: 0
+    },
+    strokeWidth: {
+      type: Number,
+      default: 1.7
+    },
+    color: {
+      type: String,
+      default: "currentColor"
+    }
+  }
+}
+</script>
+  
+<template>
+  <svg :style='{color: color}' :width="width || size" :height="height || size" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M3.26196 10.8779L11.262 19.6669C11.662 20.1069 12.353 20.1069 12.753 19.6669L20.753 10.8769C21.066 10.5329 21.102 10.0179 20.84 9.63391L17.303 4.43991C17.2114 4.30591 17.0887 4.1962 16.9453 4.12024C16.8019 4.04429 16.6422 4.00436 16.48 4.00391H7.55395C7.39169 4.00436 7.23198 4.04429 7.0886 4.12024C6.94521 4.1962 6.82247 4.30591 6.73095 4.43991L3.19095 9.63191C2.92795 10.0169 2.96396 10.5329 3.27796 10.8779H3.26196Z" stroke="currentColor" :stroke-width="strokeWidth" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
+</template>
+    

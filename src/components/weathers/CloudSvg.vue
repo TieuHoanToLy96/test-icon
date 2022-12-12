@@ -1,0 +1,35 @@
+<script>
+export default {
+  name: 'cloud-svg',
+  props: {
+    size: {
+      type: Number,
+      default: 24
+    },
+    width: {
+      type: Number,
+      default: 0
+    },
+    height: {
+      type: Number,
+      default: 0
+    },
+    strokeWidth: {
+      type: Number,
+      default: 1.7
+    },
+    color: {
+      type: String,
+      default: "currentColor"
+    }
+  }
+}
+</script>
+  
+<template>
+  <svg :style='{color: color}' :width="width || size" :height="height || size" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M8.0884 12C8.0884 10.5166 8.52827 9.06659 9.35238 7.83323C10.1765 6.59986 11.3478 5.63856 12.7183 5.07091C14.0887 4.50325 15.5967 4.35472 17.0516 4.64411C18.5064 4.9335 19.8428 5.64781 20.8917 6.6967C21.9406 7.7456 22.6549 9.08197 22.9443 10.5368C23.2337 11.9917 23.0852 13.4997 22.5175 14.8701C21.9498 16.2406 20.9885 17.4119 19.7552 18.236C18.5218 19.0601 17.0718 19.5 15.5884 19.5H7.3384C6.59387 19.4993 5.85801 19.3402 5.17967 19.0333C4.50132 18.7265 3.896 18.2788 3.40388 17.7201C2.91176 17.1614 2.54411 16.5045 2.32531 15.7928C2.10652 15.0812 2.0416 14.3311 2.13485 13.5924C2.2281 12.8538 2.4774 12.1434 2.86619 11.5084C3.25498 10.8735 3.77438 10.3285 4.38991 9.90964C5.00544 9.49078 5.70302 9.20762 6.43635 9.07897C7.16968 8.95033 7.92198 8.97912 8.64333 9.16346" stroke="currentColor" :stroke-width="strokeWidth" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
+</template>
+    

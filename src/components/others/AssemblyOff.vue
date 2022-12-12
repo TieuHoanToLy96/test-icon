@@ -1,0 +1,37 @@
+<script>
+export default {
+  name: 'assembly-off',
+  props: {
+    size: {
+      type: Number,
+      default: 24
+    },
+    width: {
+      type: Number,
+      default: 0
+    },
+    height: {
+      type: Number,
+      default: 0
+    },
+    strokeWidth: {
+      type: Number,
+      default: 1.7
+    },
+    color: {
+      type: String,
+      default: "currentColor"
+    }
+  }
+}
+</script>
+  
+<template>
+  <svg :style='{color: color}' :width="width || size" :height="height || size" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M8.703 4.6851L11.029 3.3001C11.3348 3.12987 11.679 3.04053 12.029 3.04053C12.379 3.04053 12.7232 3.12987 13.029 3.3001L19.029 6.8731H19C19.3062 7.0499 19.5601 7.30473 19.7358 7.61163C19.9115 7.91852 20.0026 8.2665 20 8.6201V15.1561C20 15.4041 19.954 15.6461 19.868 15.8711M17.712 17.7081L12.971 20.7371C12.674 20.9021 12.3398 20.9886 12 20.9886C11.6602 20.9886 11.326 20.9021 11.029 20.7371L5.029 16.9041C4.71736 16.731 4.45763 16.4778 4.27671 16.1707C4.0958 15.8635 4.00026 15.5136 4 15.1571V8.6201C4.00008 8.26346 4.09553 7.91332 4.27646 7.60598C4.45739 7.29863 4.71721 7.04526 5.029 6.8721L6.186 6.1831" stroke="currentColor" :stroke-width="strokeWidth" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M11.593 7.59102C11.888 7.45802 12.23 7.47102 12.514 7.63102L15.514 9.42102H15.5C15.812 9.60202 16.003 9.93702 16 10.298V12M14.848 14.86L12.485 16.374C12.3367 16.4566 12.1697 16.4999 12 16.4999C11.8303 16.4999 11.6633 16.4566 11.515 16.374L8.515 14.452C8.35892 14.3651 8.22889 14.2381 8.13835 14.0841C8.04781 13.9301 8.00005 13.7547 8 13.576V10.298C8 9.93402 8.197 9.59802 8.514 9.42102L9.082 9.08202" stroke="currentColor" :stroke-width="strokeWidth" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M3 3L21 21" stroke="currentColor" :stroke-width="strokeWidth" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
+</template>
+    

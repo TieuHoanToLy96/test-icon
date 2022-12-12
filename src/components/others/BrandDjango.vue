@@ -1,0 +1,38 @@
+<script>
+export default {
+  name: 'brand-django',
+  props: {
+    size: {
+      type: Number,
+      default: 24
+    },
+    width: {
+      type: Number,
+      default: 0
+    },
+    height: {
+      type: Number,
+      default: 0
+    },
+    strokeWidth: {
+      type: Number,
+      default: 1.7
+    },
+    color: {
+      type: String,
+      default: "currentColor"
+    }
+  }
+}
+</script>
+  
+<template>
+  <svg :style='{color: color}' :width="width || size" :height="height || size" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M18 3H6C4.34315 3 3 4.34315 3 6V18C3 19.6569 4.34315 21 6 21H18C19.6569 21 21 19.6569 21 18V6C21 4.34315 19.6569 3 18 3Z" stroke="currentColor" :stroke-width="strokeWidth" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M12 7V15.5L9.98499 15.701C9.60719 15.7395 9.2255 15.6983 8.8646 15.5801C8.5037 15.4619 8.17161 15.2694 7.88979 15.0148C7.60797 14.7602 7.38268 14.4494 7.22849 14.1024C7.0743 13.7553 6.99463 13.3798 6.99463 13C6.99463 12.6202 7.0743 12.2447 7.22849 11.8976C7.38268 11.5506 7.60797 11.2398 7.88979 10.9852C8.17161 10.7306 8.5037 10.5381 8.8646 10.4199C9.2255 10.3017 9.60719 10.2605 9.98499 10.299L12 10.5" stroke="currentColor" :stroke-width="strokeWidth" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M16 7V7.01" stroke="currentColor" :stroke-width="strokeWidth" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M16 10V15.586C16 16.491 15.64 17.36 15 18" stroke="currentColor" :stroke-width="strokeWidth" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
+</template>
+    

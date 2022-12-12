@@ -1,0 +1,37 @@
+<script>
+export default {
+  name: 'microphone-2-off',
+  props: {
+    size: {
+      type: Number,
+      default: 24
+    },
+    width: {
+      type: Number,
+      default: 0
+    },
+    height: {
+      type: Number,
+      default: 0
+    },
+    strokeWidth: {
+      type: Number,
+      default: 1.7
+    },
+    color: {
+      type: String,
+      default: "currentColor"
+    }
+  }
+}
+</script>
+  
+<template>
+  <svg :style='{color: color}' :width="width || size" :height="height || size" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M16.908 12.9171C17.8043 12.7514 18.6382 12.3439 19.3196 11.7385C20.001 11.1332 20.504 10.3531 20.7742 9.48257C21.0444 8.61206 21.0714 7.68426 20.8525 6.79948C20.6336 5.9147 20.177 5.10659 19.532 4.46253C18.8871 3.81846 18.0783 3.36295 17.1932 3.14523C16.3082 2.92751 15.3804 2.95586 14.5103 3.22723C13.6401 3.4986 12.8607 4.00266 12.2563 4.68491C11.6519 5.36716 11.2455 6.20165 11.081 7.09815" stroke="currentColor" :stroke-width="strokeWidth" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M10.116 10.125L3.58701 17.585C3.21173 17.9599 3.00074 18.4685 3.00046 18.9989C3.00032 19.2616 3.05191 19.5217 3.1523 19.7644C3.25268 20.0071 3.39989 20.2277 3.58551 20.4135C3.77113 20.5993 3.99154 20.7468 4.23414 20.8474C4.47675 20.948 4.7368 20.9999 4.99945 21.0001C5.5299 21.0003 6.03873 20.7899 6.41401 20.415L13.875 13.886" stroke="currentColor" :stroke-width="strokeWidth" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M3 3L21 21" stroke="currentColor" :stroke-width="strokeWidth" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
+</template>
+    

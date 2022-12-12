@@ -1,0 +1,37 @@
+<script>
+export default {
+  name: 'currency-hryvnia',
+  props: {
+    size: {
+      type: Number,
+      default: 24
+    },
+    width: {
+      type: Number,
+      default: 0
+    },
+    height: {
+      type: Number,
+      default: 0
+    },
+    strokeWidth: {
+      type: Number,
+      default: 1.7
+    },
+    color: {
+      type: String,
+      default: "currentColor"
+    }
+  }
+}
+</script>
+  
+<template>
+  <svg :style='{color: color}' :width="width || size" :height="height || size" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M8.00012 7C8.14289 6.42863 8.47262 5.9214 8.93686 5.559C9.40109 5.1966 9.97318 4.99983 10.5621 5H13.9381C14.5271 4.99983 15.0991 5.1966 15.5634 5.559C16.0276 5.9214 16.3573 6.42863 16.5001 7C16.6419 7.56729 16.5861 8.16598 16.3417 8.69723C16.0974 9.22847 15.6791 9.66051 15.1561 9.922L9.28012 12.86C8.62528 13.1875 8.09629 13.7213 7.77464 14.379C7.453 15.0368 7.35654 15.782 7.50012 16.5C7.64115 17.205 8.02212 17.8394 8.57819 18.2952C9.13427 18.7511 9.83111 19.0001 10.5501 19H13.4381C14.0271 19.0002 14.5991 18.8034 15.0634 18.441C15.5276 18.0786 15.8573 17.5714 16.0001 17" stroke="currentColor" :stroke-width="strokeWidth" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M6 10H18" stroke="currentColor" :stroke-width="strokeWidth" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M6 14H18" stroke="currentColor" :stroke-width="strokeWidth" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
+</template>
+    

@@ -1,0 +1,35 @@
+<script>
+export default {
+  name: 'repeat-once',
+  props: {
+    size: {
+      type: Number,
+      default: 24
+    },
+    width: {
+      type: Number,
+      default: 0
+    },
+    height: {
+      type: Number,
+      default: 0
+    },
+    strokeWidth: {
+      type: Number,
+      default: 1.7
+    },
+    color: {
+      type: String,
+      default: "currentColor"
+    }
+  }
+}
+</script>
+  
+<template>
+  <svg :style='{color: color}' :width="width || size" :height="height || size" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M19.1617 8.25L21.4117 6M21.4117 6L19.1617 3.75M21.4117 6H9.41174C7.82044 6 6.29432 6.63214 5.1691 7.75736C4.04388 8.88258 3.41174 10.4087 3.41174 12M5.66174 15.75L3.41174 18M3.41174 18L5.66174 20.25M3.41174 18H15.4117C17.003 18 18.5292 17.3679 19.6544 16.2426C20.7796 15.1174 21.4117 13.5913 21.4117 12M11.2867 10.4993L12.7867 9.75V14.25" stroke="currentColor" :stroke-width="strokeWidth" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
+</template>
+    

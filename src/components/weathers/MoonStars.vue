@@ -1,0 +1,35 @@
+<script>
+export default {
+  name: 'moon-stars',
+  props: {
+    size: {
+      type: Number,
+      default: 24
+    },
+    width: {
+      type: Number,
+      default: 0
+    },
+    height: {
+      type: Number,
+      default: 0
+    },
+    strokeWidth: {
+      type: Number,
+      default: 1.7
+    },
+    color: {
+      type: String,
+      default: "currentColor"
+    }
+  }
+}
+</script>
+  
+<template>
+  <svg :style='{color: color}' :width="width || size" :height="height || size" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M20.9556 10.5V6M23.2056 8.25H18.7056M16.4556 2.25V5.25M17.9556 3.75H14.9556M21.0177 14.3109C19.5454 14.72 17.9909 14.7308 16.5131 14.3421C15.0353 13.9534 13.6873 13.1793 12.6068 12.0988C11.5263 11.0183 10.7521 9.67026 10.3635 8.19248C9.9748 6.71469 9.98557 5.1602 10.3947 3.68794C8.94254 4.0919 7.62185 4.86937 6.5637 5.94276C5.50555 7.01615 4.74712 8.34806 4.36395 9.80581C3.98079 11.2636 3.98627 12.7963 4.37985 14.2512C4.77343 15.7062 5.54137 17.0327 6.60718 18.0984C7.67298 19.1642 8.99944 19.9322 10.4544 20.3257C11.9094 20.7193 13.4421 20.7248 14.8998 20.3416C16.3576 19.9584 17.6895 19.2 18.7629 18.1418C19.8362 17.0836 20.6137 15.763 21.0177 14.3109Z" stroke="currentColor" :stroke-width="strokeWidth" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
+</template>
+    

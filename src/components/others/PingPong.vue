@@ -1,0 +1,37 @@
+<script>
+export default {
+  name: 'ping-pong',
+  props: {
+    size: {
+      type: Number,
+      default: 24
+    },
+    width: {
+      type: Number,
+      default: 0
+    },
+    height: {
+      type: Number,
+      default: 0
+    },
+    strokeWidth: {
+      type: Number,
+      default: 1.7
+    },
+    color: {
+      type: String,
+      default: "currentColor"
+    }
+  }
+}
+</script>
+  
+<template>
+  <svg :style='{color: color}' :width="width || size" :height="height || size" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M12.718 20.7129C11.0909 21.173 9.35708 21.0802 7.78831 20.4492C6.21954 19.8182 4.90443 18.6845 4.04905 17.2259C3.19367 15.7673 2.84634 14.0662 3.0615 12.389C3.27666 10.7118 4.04214 9.15338 5.23801 7.95792L5.95801 7.23792C7.13089 6.06502 8.6535 5.30553 10.296 5.07408C11.9385 4.84264 13.6117 5.1518 15.063 5.95492L17.45 3.60992C17.8302 3.23319 18.3409 3.01749 18.876 3.00767C19.4111 2.99786 19.9294 3.19469 20.3231 3.55723C20.7168 3.91976 20.9556 4.42011 20.9899 4.95421C21.0241 5.48831 20.8512 6.01506 20.507 6.42492L20.391 6.55092L18.045 8.93791C18.8204 10.3394 19.136 11.9489 18.9472 13.5394C18.7585 15.1299 18.0749 16.6209 16.993 17.8019" stroke="currentColor" :stroke-width="strokeWidth" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M14 21C15.6569 21 17 19.6569 17 18C17 16.3431 15.6569 15 14 15C12.3431 15 11 16.3431 11 18C11 19.6569 12.3431 21 14 21Z" stroke="currentColor" :stroke-width="strokeWidth" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M9.30005 5.2998L18.7 14.6998" stroke="currentColor" :stroke-width="strokeWidth" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
+</template>
+    

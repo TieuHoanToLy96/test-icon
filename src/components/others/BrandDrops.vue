@@ -1,0 +1,36 @@
+<script>
+export default {
+  name: 'brand-drops',
+  props: {
+    size: {
+      type: Number,
+      default: 24
+    },
+    width: {
+      type: Number,
+      default: 0
+    },
+    height: {
+      type: Number,
+      default: 0
+    },
+    strokeWidth: {
+      type: Number,
+      default: 1.7
+    },
+    color: {
+      type: String,
+      default: "currentColor"
+    }
+  }
+}
+</script>
+  
+<template>
+  <svg :style='{color: color}' :width="width || size" :height="height || size" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M17.637 7.416C18.7604 8.52074 19.5282 9.93591 19.8417 11.48C20.1553 13.024 20.0005 14.6266 19.397 16.082C18.788 17.5409 17.7603 18.7867 16.4438 19.662C15.1273 20.5373 13.581 21.0029 12 21C10.4193 21.0027 8.87316 20.537 7.55684 19.6617C6.24053 18.7864 5.21303 17.5408 4.60404 16.082C4.00048 14.6267 3.84547 13.0242 4.15887 11.4801C4.47228 9.93607 5.23982 8.52085 6.36304 7.416L12 2L17.637 7.416Z" stroke="currentColor" :stroke-width="strokeWidth" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M14.466 10.923C14.9591 11.4233 15.2949 12.0572 15.4317 12.7462C15.5685 13.4352 15.5005 14.1492 15.236 14.8C14.9771 15.4473 14.5308 16.0025 13.9542 16.3945C13.3777 16.7864 12.6972 16.9973 12 17C11.3029 16.9973 10.6224 16.7864 10.0459 16.3945C9.46933 16.0025 9.02298 15.4473 8.76404 14.8C8.49956 14.1492 8.43154 13.4352 8.56838 12.7462C8.70523 12.0572 9.04094 11.4233 9.53404 10.923L12 8.5L14.466 10.923V10.923Z" stroke="currentColor" :stroke-width="strokeWidth" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
+</template>
+    

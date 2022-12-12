@@ -1,0 +1,35 @@
+<script>
+export default {
+  name: 'package-svg',
+  props: {
+    size: {
+      type: Number,
+      default: 24
+    },
+    width: {
+      type: Number,
+      default: 0
+    },
+    height: {
+      type: Number,
+      default: 0
+    },
+    strokeWidth: {
+      type: Number,
+      default: 1.7
+    },
+    color: {
+      type: String,
+      default: "currentColor"
+    }
+  }
+}
+</script>
+  
+<template>
+  <svg :style='{color: color}' :width="width || size" :height="height || size" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M12.1176 22.0145C11.9888 22.0145 11.8622 21.9813 11.75 21.9181L3.49995 17.2775C3.38396 17.2123 3.28742 17.1173 3.22024 17.0025C3.15305 16.8876 3.11765 16.7569 3.11765 16.6238V7.3761C3.11765 7.24302 3.15305 7.11234 3.22024 6.99746C3.28742 6.88259 3.38396 6.78766 3.49995 6.72242L11.75 2.08179C11.8622 2.01865 11.9888 1.98547 12.1176 1.98547C12.2464 1.98547 12.3731 2.01865 12.4853 2.08179L20.7353 6.72242C20.8513 6.78766 20.9479 6.88259 21.0151 6.99746C21.0822 7.11234 21.1176 7.24302 21.1176 7.3761V16.6238C21.1176 16.7569 21.0822 16.8876 21.0151 17.0025C20.9479 17.1173 20.8513 17.2123 20.7353 17.2775L12.4853 21.9181C12.3731 21.9813 12.2464 22.0145 12.1176 22.0145ZM12.1176 22.0145L12.2066 12M16.7135 14.2979V9.42287L7.61765 4.40621M21.0142 6.99624L12.2066 12M12.2066 12L3.22152 6.99531" stroke="currentColor" :stroke-width="strokeWidth" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
+</template>
+    

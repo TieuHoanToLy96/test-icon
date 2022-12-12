@@ -1,0 +1,35 @@
+<script>
+export default {
+  name: 'snowflake-svg',
+  props: {
+    size: {
+      type: Number,
+      default: 24
+    },
+    width: {
+      type: Number,
+      default: 0
+    },
+    height: {
+      type: Number,
+      default: 0
+    },
+    strokeWidth: {
+      type: Number,
+      default: 1.7
+    },
+    color: {
+      type: String,
+      default: "currentColor"
+    }
+  }
+}
+</script>
+  
+<template>
+  <svg :style='{color: color}' :width="width || size" :height="height || size" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M12.529 6V18M12.529 6L10.279 3.75M12.529 6L14.779 3.75M12.529 18L10.279 20.25M12.529 18L14.779 20.25M7.33281 9L17.7251 15M7.33281 9L4.25928 9.82359M7.33281 9L6.50928 5.92641M17.7251 15L18.5487 18.0736M17.7251 15L20.7987 14.1764M7.33281 15L17.7251 9M7.33281 15L6.50928 18.0736M7.33281 15L4.25928 14.1764M17.7251 9L20.7987 9.82359M17.7251 9L18.5487 5.92641" stroke="currentColor" :stroke-width="strokeWidth" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
+</template>
+    
