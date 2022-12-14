@@ -1,0 +1,35 @@
+<script>
+export default {
+  name: 'envelope-svg',
+  props: {
+    size: {
+      type: Number,
+      default: 24
+    },
+    width: {
+      type: Number,
+      default: 0
+    },
+    height: {
+      type: Number,
+      default: 0
+    },
+    strokeWidth: {
+      type: Number,
+      default: 1.7
+    },
+    color: {
+      type: String,
+      default: "currentColor"
+    }
+  }
+}
+</script>
+  
+<template>
+  <svg :style='{color: color}' :width="width || size" :height="height || size" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M21.8236 5.25L12.8236 13.5L3.82361 5.25M21.8236 5.25H3.82361M21.8236 5.25V18C21.8236 18.1989 21.7446 18.3897 21.6039 18.5303C21.4633 18.671 21.2725 18.75 21.0736 18.75H4.57361C4.3747 18.75 4.18393 18.671 4.04328 18.5303C3.90263 18.3897 3.82361 18.1989 3.82361 18V5.25M11.1872 12L4.05487 18.5381M21.5924 18.5381L14.4599 12" stroke="currentColor" :stroke-width="strokeWidth" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
+</template>
+    

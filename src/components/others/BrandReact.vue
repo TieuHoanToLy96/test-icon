@@ -1,0 +1,41 @@
+<script>
+export default {
+  name: 'brand-react',
+  props: {
+    size: {
+      type: Number,
+      default: 24
+    },
+    width: {
+      type: Number,
+      default: 0
+    },
+    height: {
+      type: Number,
+      default: 0
+    },
+    strokeWidth: {
+      type: Number,
+      default: 1.7
+    },
+    color: {
+      type: String,
+      default: "currentColor"
+    }
+  }
+}
+</script>
+  
+<template>
+  <svg :style='{color: color}' :width="width || size" :height="height || size" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M6.306 8.71094C3.704 9.43394 2 10.6369 2 11.9999C2 14.2099 6.477 15.9999 12 15.9999C12.773 15.9999 13.526 15.9649 14.248 15.8979" stroke="currentColor" :stroke-width="strokeWidth" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M17.692 15.289C20.295 14.567 22 13.363 22 12C22 9.79 17.523 8 12 8C11.227 8 10.474 8.035 9.75 8.102" stroke="currentColor" :stroke-width="strokeWidth" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M6.30511 15.287C5.62911 17.902 5.82011 19.98 7.00011 20.66C8.91311 21.765 12.7031 18.783 15.4641 14C15.8511 13.33 16.1971 12.661 16.5001 12.002" stroke="currentColor" :stroke-width="strokeWidth" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M17.694 8.71593C18.371 6.09993 18.181 4.01993 17 3.33993C15.087 2.23493 11.297 5.21693 8.53602 9.99993C8.14902 10.6699 7.80302 11.3399 7.49902 11.9989" stroke="currentColor" :stroke-width="strokeWidth" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M12.0001 5.42407C10.0751 3.53207 8.18011 2.65807 7.00011 3.34007C5.08711 4.44407 5.77411 9.21707 8.53611 14.0001C8.92211 14.6701 9.32911 15.3041 9.74811 15.8961" stroke="currentColor" :stroke-width="strokeWidth" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M11.998 18.574C13.924 20.467 15.819 21.342 17 20.66C18.913 19.556 18.226 14.783 15.464 10C15.089 9.35003 14.684 8.71703 14.252 8.10303" stroke="currentColor" :stroke-width="strokeWidth" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M11.5001 12.8661C11.6139 12.9328 11.7397 12.9763 11.8704 12.9942C12.0011 13.0121 12.134 13.0039 12.2615 12.9702C12.389 12.9365 12.5085 12.8779 12.6133 12.7978C12.7181 12.7177 12.8059 12.6176 12.8719 12.5034C12.9378 12.3892 12.9805 12.2631 12.9975 12.1323C13.0145 12.0015 13.0055 11.8687 12.9709 11.7414C12.9364 11.6141 12.877 11.495 12.7962 11.3907C12.7154 11.2865 12.6148 11.1993 12.5001 11.1341C12.2706 11.0036 11.9987 10.9692 11.7439 11.0384C11.489 11.1075 11.2719 11.2747 11.1398 11.5034C11.0078 11.7321 10.9716 12.0037 11.0391 12.259C11.1066 12.5143 11.2723 12.7326 11.5001 12.8661Z" stroke="currentColor" :stroke-width="strokeWidth" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
+</template>
+    

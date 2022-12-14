@@ -22,7 +22,7 @@ const clearAndUpper = text => {
   return text.replace(/-/, "").toUpperCase();
 }
 
-const nameAllComponent = []
+let nameAllComponent = []
 
 const convertVueComponent = (dirName = "arrows") => {
   let fullDir = path.resolve(`./src/assets/icons/${dirName}`)

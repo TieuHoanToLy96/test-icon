@@ -1,0 +1,37 @@
+<script>
+export default {
+  name: 'brand-pinterest',
+  props: {
+    size: {
+      type: Number,
+      default: 24
+    },
+    width: {
+      type: Number,
+      default: 0
+    },
+    height: {
+      type: Number,
+      default: 0
+    },
+    strokeWidth: {
+      type: Number,
+      default: 1.7
+    },
+    color: {
+      type: String,
+      default: "currentColor"
+    }
+  }
+}
+</script>
+  
+<template>
+  <svg :style='{color: color}' :width="width || size" :height="height || size" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M8 20L12 11" stroke="currentColor" :stroke-width="strokeWidth" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M10.7 14C11.137 15.263 12.13 16 13.25 16C15.321 16 17 14.446 17 12C17.0009 11.2698 16.8418 10.5483 16.5339 9.88621C16.2261 9.2241 15.777 8.63744 15.2182 8.16747C14.6593 7.69751 14.0044 7.35564 13.2993 7.1659C12.5942 6.97616 11.8561 6.94316 11.1369 7.0692C10.4177 7.19525 9.73477 7.47729 9.13623 7.89551C8.53768 8.31372 8.038 8.85795 7.6723 9.48994C7.3066 10.1219 7.08376 10.8264 7.01944 11.5537C6.95512 12.281 7.05088 13.0136 7.3 13.7" stroke="currentColor" :stroke-width="strokeWidth" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M12 21C16.9706 21 21 16.9706 21 12C21 7.02944 16.9706 3 12 3C7.02944 3 3 7.02944 3 12C3 16.9706 7.02944 21 12 21Z" stroke="currentColor" :stroke-width="strokeWidth" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
+</template>
+    

@@ -1,0 +1,35 @@
+<script>
+export default {
+  name: 'order-delete',
+  props: {
+    size: {
+      type: Number,
+      default: 24
+    },
+    width: {
+      type: Number,
+      default: 0
+    },
+    height: {
+      type: Number,
+      default: 0
+    },
+    strokeWidth: {
+      type: Number,
+      default: 1.7
+    },
+    color: {
+      type: String,
+      default: "currentColor"
+    }
+  }
+}
+</script>
+  
+<template>
+  <svg :style='{color: color}' :width="width || size" :height="height || size" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M4.1249 7.8V4.875C4.1249 4.67609 4.20392 4.48532 4.34457 4.34467C4.48522 4.20402 4.67599 4.125 4.8749 4.125H19.1249C19.3238 4.125 19.5146 4.20402 19.6552 4.34467C19.7959 4.48532 19.8749 4.67609 19.8749 4.875V19.125C19.8749 19.3239 19.7959 19.5147 19.6552 19.6553C19.5146 19.796 19.3238 19.875 19.1249 19.875H13.7999M11.9999 13.2H2.3999M5.9999 15.6V18M8.3999 15.6V18M10.7999 13.2V20.04C10.7999 20.1355 10.7578 20.227 10.6827 20.2946C10.6077 20.3621 10.506 20.4 10.3999 20.4H3.9999C3.89382 20.4 3.79207 20.3621 3.71706 20.2946C3.64205 20.227 3.5999 20.1355 3.5999 20.04V13.2M9.5999 13.2V12C9.5999 11.6817 9.49876 11.3765 9.31873 11.1515C9.13869 10.9264 8.89451 10.8 8.6399 10.8H5.7599C5.50529 10.8 5.26112 10.9264 5.08108 11.1515C4.90105 11.3765 4.7999 11.6817 4.7999 12V13.2" stroke="currentColor" :stroke-width="strokeWidth" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
+</template>
+    

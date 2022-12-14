@@ -1,0 +1,36 @@
+<script>
+export default {
+  name: 'brand-nuxt',
+  props: {
+    size: {
+      type: Number,
+      default: 24
+    },
+    width: {
+      type: Number,
+      default: 0
+    },
+    height: {
+      type: Number,
+      default: 0
+    },
+    strokeWidth: {
+      type: Number,
+      default: 1.7
+    },
+    color: {
+      type: String,
+      default: "currentColor"
+    }
+  }
+}
+</script>
+  
+<template>
+  <svg :style='{color: color}' :width="width || size" :height="height || size" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M12.146 8.58292L10.846 6.49292C10.7511 6.34069 10.6187 6.2154 10.4615 6.12909C10.3043 6.04278 10.1275 5.99834 9.94819 6.00005C9.76885 6.00175 9.59296 6.04955 9.43741 6.13884C9.28186 6.22813 9.15189 6.35591 9.05997 6.50992L3.14997 16.4179C3.05528 16.5766 3.00431 16.7575 3.00226 16.9423C3.00021 17.1271 3.04714 17.3091 3.13829 17.4698C3.22943 17.6306 3.36153 17.7643 3.52114 17.8574C3.68075 17.9505 3.86218 17.9997 4.04697 17.9999H7.95997" stroke="currentColor" :stroke-width="strokeWidth" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M20.043 17.9999C20.786 17.9999 21.2441 17.1569 20.8631 16.4949L16.8191 9.48188C16.7381 9.33559 16.6195 9.21364 16.4754 9.12873C16.3314 9.04381 16.1672 8.99902 16.0001 8.99902C15.8329 8.99902 15.6687 9.04381 15.5247 9.12873C15.3806 9.21364 15.262 9.33559 15.181 9.48188L11.138 16.4949C10.756 17.1569 11.2141 17.9999 11.9571 17.9999H20.043Z" stroke="currentColor" :stroke-width="strokeWidth" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
+</template>
+    

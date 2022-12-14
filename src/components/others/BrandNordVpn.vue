@@ -1,0 +1,36 @@
+<script>
+export default {
+  name: 'brand-nord-vpn',
+  props: {
+    size: {
+      type: Number,
+      default: 24
+    },
+    width: {
+      type: Number,
+      default: 0
+    },
+    height: {
+      type: Number,
+      default: 0
+    },
+    strokeWidth: {
+      type: Number,
+      default: 1.7
+    },
+    color: {
+      type: String,
+      default: "currentColor"
+    }
+  }
+}
+</script>
+  
+<template>
+  <svg :style='{color: color}' :width="width || size" :height="height || size" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M9.99197 15L7.98497 12L3.96997 20C1.75797 16.939 1.34497 12.902 3.05497 9.537C3.89691 7.88421 5.17607 6.49402 6.75324 5.51775C8.33041 4.54147 10.1452 4.01651 12 4C13.8548 4.01651 15.6695 4.54147 17.2467 5.51775C18.8239 6.49402 20.103 7.88421 20.945 9.537C22.655 12.902 22.242 16.939 20.03 20L15.513 12L14.008 13.5" stroke="currentColor" :stroke-width="strokeWidth" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M14.5 15L11.5 9L9 13.5" stroke="currentColor" :stroke-width="strokeWidth" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
+</template>
+    

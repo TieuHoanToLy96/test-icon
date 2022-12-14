@@ -1,0 +1,35 @@
+<script>
+export default {
+  name: 'poker-chip',
+  props: {
+    size: {
+      type: Number,
+      default: 24
+    },
+    width: {
+      type: Number,
+      default: 0
+    },
+    height: {
+      type: Number,
+      default: 0
+    },
+    strokeWidth: {
+      type: Number,
+      default: 1.7
+    },
+    color: {
+      type: String,
+      default: "currentColor"
+    }
+  }
+}
+</script>
+  
+<template>
+  <svg :style='{color: color}' :width="width || size" :height="height || size" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M21.2352 12C21.2352 16.9706 17.2058 21 12.2352 21M21.2352 12C21.2352 7.02944 17.2058 3 12.2352 3M21.2352 12H17.4852M12.2352 21C7.26467 21 3.23523 16.9706 3.23523 12M12.2352 21V17.25M3.23523 12C3.23523 7.02944 7.26467 3 12.2352 3M3.23523 12H6.98523M12.2352 3V6.75M17.4852 12C17.4852 14.8995 15.1347 17.25 12.2352 17.25M17.4852 12C17.4852 9.10051 15.1347 6.75 12.2352 6.75M12.2352 17.25C9.33574 17.25 6.98523 14.8995 6.98523 12M6.98523 12C6.98523 9.10051 9.33574 6.75 12.2352 6.75M8.52292 8.28769L5.87127 5.63604M8.52292 15.7123L5.87127 18.364M15.9475 15.7123L18.5992 18.364M15.9475 8.28769L18.5992 5.63604" stroke="currentColor" :stroke-width="strokeWidth" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
+</template>
+    

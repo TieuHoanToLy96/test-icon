@@ -1,0 +1,36 @@
+<script>
+export default {
+  name: 'bread-off',
+  props: {
+    size: {
+      type: Number,
+      default: 24
+    },
+    width: {
+      type: Number,
+      default: 0
+    },
+    height: {
+      type: Number,
+      default: 0
+    },
+    strokeWidth: {
+      type: Number,
+      default: 1.7
+    },
+    color: {
+      type: String,
+      default: "currentColor"
+    }
+  }
+}
+</script>
+  
+<template>
+  <svg :style='{color: color}' :width="width || size" :height="height || size" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M18.4151 18.414C18.2296 18.6001 18.009 18.7477 17.7662 18.8483C17.5233 18.9488 17.263 19.0004 17.0001 19H7.00015C6.46971 19 5.96101 18.7893 5.58593 18.4142C5.21086 18.0391 5.00015 17.5304 5.00015 17V10.236C4.65151 9.92407 4.38065 9.53494 4.20921 9.09968C4.03777 8.66441 3.97049 8.19509 4.01276 7.72919C4.05502 7.2633 4.20566 6.81374 4.45263 6.41644C4.6996 6.01913 5.03607 5.68509 5.43515 5.441M9.00015 5H17.0001C17.6075 5.00024 18.2004 5.18481 18.7006 5.52931C19.2008 5.8738 19.5846 6.362 19.8014 6.92934C20.0181 7.49669 20.0576 8.11645 19.9145 8.7067C19.7715 9.29694 19.4526 9.82987 19.0001 10.235V15" stroke="currentColor" :stroke-width="strokeWidth" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M3 3L21 21" stroke="currentColor" :stroke-width="strokeWidth" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
+</template>
+    

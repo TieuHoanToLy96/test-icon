@@ -1,0 +1,35 @@
+<script>
+export default {
+  name: 'clipboard-text',
+  props: {
+    size: {
+      type: Number,
+      default: 24
+    },
+    width: {
+      type: Number,
+      default: 0
+    },
+    height: {
+      type: Number,
+      default: 0
+    },
+    strokeWidth: {
+      type: Number,
+      default: 1.7
+    },
+    color: {
+      type: String,
+      default: "currentColor"
+    }
+  }
+}
+</script>
+  
+<template>
+  <svg :style='{color: color}' :width="width || size" :height="height || size" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M9.23535 14.25H15.2354M9.23535 11.25H15.2354M15.2355 3.75H18.9854C19.1843 3.75 19.375 3.82902 19.5157 3.96967C19.6563 4.11032 19.7354 4.30109 19.7354 4.5V20.25C19.7354 20.4489 19.6563 20.6397 19.5157 20.7803C19.375 20.921 19.1843 21 18.9854 21H5.48535C5.28644 21 5.09567 20.921 4.95502 20.7803C4.81437 20.6397 4.73535 20.4489 4.73535 20.25V4.5C4.73535 4.30109 4.81437 4.11032 4.95502 3.96967C5.09567 3.82902 5.28644 3.75 5.48535 3.75H9.23515M8.48535 6.75V6C8.48535 5.00544 8.88044 4.05161 9.5837 3.34835C10.287 2.64509 11.2408 2.25 12.2354 2.25C13.2299 2.25 14.1837 2.64509 14.887 3.34835C15.5903 4.05161 15.9854 5.00544 15.9854 6V6.75H8.48535Z" stroke="currentColor" :stroke-width="strokeWidth" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
+</template>
+    

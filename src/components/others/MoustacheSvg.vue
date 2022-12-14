@@ -1,0 +1,36 @@
+<script>
+export default {
+  name: 'moustache-svg',
+  props: {
+    size: {
+      type: Number,
+      default: 24
+    },
+    width: {
+      type: Number,
+      default: 0
+    },
+    height: {
+      type: Number,
+      default: 0
+    },
+    strokeWidth: {
+      type: Number,
+      default: 1.7
+    },
+    color: {
+      type: String,
+      default: "currentColor"
+    }
+  }
+}
+</script>
+  
+<template>
+  <svg :style='{color: color}' :width="width || size" :height="height || size" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M15 9C15.5268 8.99984 16.0443 9.13838 16.5005 9.40169C16.9567 9.66501 17.3356 10.0438 17.599 10.5H17.6C18.533 11.833 19.733 12.056 20.726 12.056L21.017 12.05L21.787 12.006L22 12C21.037 13.926 18.837 14.925 15.4 14.996L15 15L14.835 14.995C14.0563 14.95 13.3257 14.6036 12.7982 14.029C12.2707 13.4545 11.9876 12.6971 12.0091 11.9175C12.0305 11.1378 12.3548 10.3971 12.9132 9.85246C13.4715 9.30783 14.22 9.00207 15 9Z" stroke="currentColor" :stroke-width="strokeWidth" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M9 9C8.47323 8.99984 7.95571 9.13838 7.49948 9.40169C7.04324 9.66501 6.66438 10.0438 6.401 10.5H6.4C5.467 11.833 4.267 12.056 3.274 12.056L2.983 12.05L2.213 12.006L2 12C2.963 13.926 5.163 14.925 8.6 14.996L9 15L9.165 14.995C9.94368 14.95 10.6742 14.6036 11.2018 14.029C11.7293 13.4545 12.0124 12.6971 11.9909 11.9175C11.9695 11.1378 11.6452 10.3971 11.0868 9.85246C10.5285 9.30783 9.77998 9.00207 9 9Z" stroke="currentColor" :stroke-width="strokeWidth" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
+</template>
+    

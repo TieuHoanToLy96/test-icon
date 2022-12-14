@@ -1,0 +1,35 @@
+<script>
+export default {
+  name: 'folder-simple-minus',
+  props: {
+    size: {
+      type: Number,
+      default: 24
+    },
+    width: {
+      type: Number,
+      default: 0
+    },
+    height: {
+      type: Number,
+      default: 0
+    },
+    strokeWidth: {
+      type: Number,
+      default: 1.7
+    },
+    color: {
+      type: String,
+      default: "currentColor"
+    }
+  }
+}
+</script>
+  
+<template>
+  <svg :style='{color: color}' :width="width || size" :height="height || size" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M10.6323 13.5H15.1323M21.8823 8.25V18.8333C21.8823 19.0101 21.8121 19.1797 21.6871 19.3047C21.562 19.4298 21.3925 19.5 21.2157 19.5H4.63232C4.43341 19.5 4.24265 19.421 4.10199 19.2803C3.96134 19.1397 3.88232 18.9489 3.88232 18.75V6C3.88232 5.80109 3.96134 5.61032 4.10199 5.46967C4.24265 5.32902 4.43341 5.25 4.63232 5.25H9.63232C9.7946 5.25 9.9525 5.30263 10.0823 5.4L12.6823 7.35C12.8121 7.44737 12.97 7.5 13.1323 7.5H21.1323C21.3312 7.5 21.522 7.57902 21.6627 7.71967C21.8033 7.86032 21.8823 8.05109 21.8823 8.25Z" stroke="currentColor" :stroke-width="strokeWidth" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>
+
+</template>
+    

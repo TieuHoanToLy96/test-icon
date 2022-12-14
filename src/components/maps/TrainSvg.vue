@@ -1,0 +1,37 @@
+<script>
+export default {
+  name: 'train-svg',
+  props: {
+    size: {
+      type: Number,
+      default: 24
+    },
+    width: {
+      type: Number,
+      default: 0
+    },
+    height: {
+      type: Number,
+      default: 0
+    },
+    strokeWidth: {
+      type: Number,
+      default: 1.7
+    },
+    color: {
+      type: String,
+      default: "currentColor"
+    }
+  }
+}
+</script>
+  
+<template>
+  <svg :style='{color: color}' :width="width || size" :height="height || size" viewBox="0 0 25 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M4.77222 12H20.5222M4.77222 6.75H20.5222M9.64722 19.5L7.39722 22.5M15.6472 19.5L17.8972 22.5M12.6472 6.75V12M7.02222 3H18.2722C19.5149 3 20.5222 4.00736 20.5222 5.25V17.25C20.5222 18.4926 19.5149 19.5 18.2722 19.5H7.02222C5.77958 19.5 4.77222 18.4926 4.77222 17.25V5.25C4.77222 4.00736 5.77958 3 7.02222 3Z" stroke="currentColor" :stroke-width="strokeWidth" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M16.7722 17.0625C17.29 17.0625 17.7097 16.6428 17.7097 16.125C17.7097 15.6072 17.29 15.1875 16.7722 15.1875C16.2544 15.1875 15.8347 15.6072 15.8347 16.125C15.8347 16.6428 16.2544 17.0625 16.7722 17.0625Z" fill="currentColor"/>
+<path d="M8.52222 17.0625C9.03998 17.0625 9.45972 16.6428 9.45972 16.125C9.45972 15.6072 9.03998 15.1875 8.52222 15.1875C8.00445 15.1875 7.58472 15.6072 7.58472 16.125C7.58472 16.6428 8.00445 17.0625 8.52222 17.0625Z" fill="currentColor"/>
+</svg>
+
+</template>
+    
