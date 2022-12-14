@@ -22,6 +22,8 @@ const clearAndUpper = text => {
   return text.replace(/-/, "").toUpperCase();
 }
 
+const nameAllComponent = []
+
 const convertVueComponent = (dirName = "arrows") => {
   let fullDir = path.resolve(`./src/assets/icons/${dirName}`)
 
@@ -79,12 +81,15 @@ export default {
   ${content}
 </template>
     `
-    importVue = importVue.concat([{ name: file, dir: dirName }])
-    if (!fs.existsSync(path.resolve(`./src/components/${dirName}`))) {
-      fs.mkdirSync(path.resolve(`./src/components/${dirName}`));
+    if (!nameAllComponent.includes(file)) {
+      importVue = importVue.concat([{ name: file, dir: dirName }])
+      if (!fs.existsSync(path.resolve(`./src/components/${dirName}`))) {
+        fs.mkdirSync(path.resolve(`./src/components/${dirName}`));
+      }
+  
+      fs.writeFileSync(path.resolve(`./src/components/${dirName}`, file + ".vue"), newContent)
+      nameAllComponent = nameAllComponent.concat([file])
     }
-
-    fs.writeFileSync(path.resolve(`./src/components/${dirName}`, file + ".vue"), newContent)
   })
 
 
