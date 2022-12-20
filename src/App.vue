@@ -257,6 +257,47 @@ export default {
               cursor: 'pointer',
               fontSize: '18px'
             }" @click="copy('npm i vue-pancake-icons', 'npm')">npm i vue-pancake-icons</div>
+            <div class="w-full" :style="{
+              background: '#fff',
+              padding: '16px 20px',
+              borderRadius: '6px',
+              marginTop: '10px',
+              border: '1px solid #e8e8e8',
+              cursor: 'pointer',
+              fontSize: '18px'
+            }">
+              <div> #1 </div>
+              <img :style="{ width: '100%' }"
+                src="https://statics.pancake.vn/web-media/b8/8a/27/d2/a79bc05a8ec81bf68220b3c8a784b50f2f73ce587c16a46c201b7a74.png" />
+            </div>
+
+            <div class="w-full" :style="{
+              background: '#fff',
+              padding: '16px 20px',
+              borderRadius: '6px',
+              marginTop: '10px',
+              border: '1px solid #e8e8e8',
+              cursor: 'pointer',
+              fontSize: '18px'
+            }">
+              <div> #2 </div>
+              <img :style="{ width: '100%' }"
+                src="https://statics.pancake.vn/web-media/6e/cd/47/70/f2d02568d1db6df32ad557eb5fb6fd79d6e848945a7239645af41775.png" />
+            </div>
+
+            <div class="w-full" :style="{
+              background: '#fff',
+              padding: '16px 20px',
+              borderRadius: '6px',
+              marginTop: '10px',
+              border: '1px solid #e8e8e8',
+              cursor: 'pointer',
+              fontSize: '18px'
+            }">
+              <div> #3 </div>
+              <img :style="{ width: '100%' }"
+                src="https://statics.pancake.vn/web-media/3e/a5/6e/b7/f6a3d66877518d9c3c3594afd03c9e6afb659b11f1e8358cfe107b47.png" />
+            </div>
           </div>
         </div>
       </a-layout-content>
