@@ -32,7 +32,7 @@ export default {
     return { shallowRef, markRaw }
   },
   data() {
-    return { array: [], templateString: "", tag: "", visibleModal: false, key: 'all', searchTerm: "", pickr: null, colorSvg: "", iconSize: '24', exampleColors: ["#000", "#e01a4f", "#5f19dd", "#0ead69", "#53b3cb"] }
+    return { array: [], templateString: "", componentImport: "", tag: "", visibleModal: false, key: 'all', searchTerm: "", pickr: null, colorSvg: "", iconSize: '24', exampleColors: ["#000", "#e01a4f", "#5f19dd", "#0ead69", "#53b3cb"] }
   },
   computed: {
     totalIcon() {
@@ -75,9 +75,16 @@ export default {
     }
   },
   methods: {
+    clearAndUpper(text) {
+      return text.replace(/-/, "").toUpperCase();
+    },
+    toPascalCase(text) {
+      return text.replace(/(^\w|-\w)/g, this.clearAndUpper);
+    },
     click(idx, componentName) {
       let refName = `module_${componentName}_${idx}`
       this.templateString = this.$refs[`${refName}`][0].$el.outerHTML
+      this.componentImport = this.toPascalCase(componentName)
       this.tag = `<${componentName}-pcon`
       if (this.colorSvg) {
         this.tag = this.tag + ` color="${this.colorSvg}"`
@@ -139,6 +146,7 @@ export default {
     cancelModal() {
       this.visibleModal = false
       this.templateString = ""
+      this.componentImport = ""
       this.tag = ""
     }
   }
@@ -259,6 +267,7 @@ export default {
     <div>
       <div class="icon-svg" v-html="templateString"></div>
       <div class="icon-tag" @click="e => copy(tag, 'tag')"> {{ tag }}</div>
+      <div class="icon-tag" @click="e => copy(componentImport, 'name')"> {{ componentImport }}</div>
       <div class="icon-html" @click="e => copy(templateString, 'svg')">{{ templateString}}</div>
     </div>
   </a-modal>
